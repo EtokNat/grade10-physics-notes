@@ -1,10 +1,88 @@
-.reveal img { max-height: 400px; }
-.reveal section { font-size: 0.85em; }
-.reveal blockquote {
-  background: #eef3ff;
-  border-left: 4px solid #0044cc;
-  padding: .4em .8em;
+/* Bold, high-conspicuity presentation style */
+
+.reveal {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  font-weight: 700;
+  color: #0a1626;
+}
+
+.reveal section {
+  font-size: 0.95em;
   text-align: left;
 }
-.reveal table { font-size: .75em; }
-.reveal pre, .reveal code { background: #f3f3f3; }
+
+/* Center the title slide only */
+.reveal section:first-of-type {
+  text-align: center;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: #0b4f8c;
+  text-transform: none;
+  margin-bottom: 0.4em;
+}
+
+.reveal h1 { font-size: 2.1em; }
+.reveal h2 { font-size: 1.55em; }
+.reveal h3 { font-size: 1.15em; color: #0a3a66; }
+
+.reveal p, .reveal li { font-weight: 700; line-height: 1.35; }
+.reveal strong { font-weight: 900; color: #000; }
+.reveal em { font-weight: 700; font-style: italic; color: #333; }
+
+.reveal ul, .reveal ol { margin-left: 1em; }
+.reveal li { margin-bottom: 0.35em; }
+
+.reveal blockquote {
+  background: #eef3ff;
+  border-left: 6px solid #0044cc;
+  padding: 0.5em 0.9em;
+  margin: 0.4em 0;
+  font-weight: 700;
+  text-align: left;
+  border-radius: 4px;
+  color: #0a1626;
+}
+.reveal blockquote strong { color: #003080; }
+
+.reveal table {
+  font-size: 0.78em;
+  font-weight: 700;
+  border-collapse: collapse;
+}
+.reveal table th, .reveal table td {
+  border: 1px solid #334;
+  padding: 0.3em 0.5em;
+}
+.reveal table th { background: #0b4f8c; color: #fff; font-weight: 900; }
+
+.reveal pre, .reveal code {
+  background: #f3f3f3;
+  font-family: "Liberation Mono", Menlo, monospace;
+  font-weight: 700;
+}
+
+.reveal img {
+  max-height: 420px;
+  display: block;
+  margin: 0.4em auto;
+  background: #fff;
+}
+
+.reveal mjx-container {
+  font-weight: 700;
+}
+
+/* Classwork / Homework banner headings */
+.reveal h2.task,
+.reveal h2.homework {
+  color: #fff;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.8em;
+}
+.reveal h2.task { background: #0b4f8c; }
+.reveal h2.homework { background: #a3310f; }

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Greenoak International School · Michaelmas 2026/2027">
+  <title>Grade 10 Physics — Week 5, Lesson 2</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./revealjs/dist/reset.css">
+  <link rel="stylesheet" href="./revealjs/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="./revealjs/dist/theme/white.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Grade 10 Physics — Week 5, Lesson 2</h1>
+  <p class="subtitle">Capillarity</p>
+  <p class="author">Greenoak International School · Michaelmas
+2026/2027</p>
+</section>
+
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+<ol type="1">
+<li><strong>Define</strong> capillarity as the rise or fall of a liquid
+in a narrow tube.</li>
+<li><strong>State</strong> the capillary rise formula <span
+class="math inline">\(h = \dfrac{2T\cos\theta}{r\rho g}\)</span>
+qualitatively, naming each symbol.</li>
+<li><strong>Explain</strong> why water rises and mercury falls in a
+narrow glass tube.</li>
+<li><strong>Give</strong> everyday applications of capillarity.</li>
+</ol>
+</section>
+<section id="prior-knowledge-check" class="slide level2">
+<h2>Prior knowledge check</h2>
+<ul>
+<li>Yesterday: adhesion (unlike), cohesion (like); meniscus shape.</li>
+<li>Grade 10 maths: inverse proportion — <span class="math inline">\(y
+\propto 1/x\)</span> means doubling <span
+class="math inline">\(x\)</span> halves <span
+class="math inline">\(y\)</span>.</li>
+</ul>
+</section>
+<section id="key-definitions-dual-register" class="slide level2">
+<h2>Key definitions — dual register</h2>
+<blockquote>
+<p><strong>Note (WAEC form)</strong></p>
+<p><strong>WAEC / WASSCE accepted form.</strong>
+<strong>Capillarity</strong> (or capillary action) is the rise or fall
+of a liquid in a narrow tube relative to the surrounding liquid level,
+caused by the interplay of adhesion (liquid–tube) and cohesion
+(liquid–liquid) together with surface tension. <em>[textbook form —
+mark-scheme wording not independently verified]</em></p>
+<p><strong>Meniscus.</strong> The curved upper surface of a liquid in a
+tube. <strong>Concave</strong> (dips in middle) when adhesion &gt;
+cohesion (water in glass). <strong>Convex</strong> (bulges up) when
+cohesion &gt; adhesion (mercury in glass).</p>
+<p><strong>Contact angle <span
+class="math inline">\(\theta\)</span>.</strong> Angle between the liquid
+surface and the solid wall at the line of contact. <span
+class="math inline">\(\theta &lt; 90^\circ\)</span> → concave meniscus,
+liquid wets the solid, capillary <strong>rise</strong>. <span
+class="math inline">\(\theta &gt; 90^\circ\)</span> → convex meniscus,
+non-wetting, capillary <strong>depression</strong>.</p>
+<p><strong>IGCSE 0625 (2026–2028) note.</strong> Capillarity is
+<strong>not</strong> an explicit learning objective in the current 0625
+specification. The model below is retained as background for pressure
+and density. <em>[Verify against 0625 syllabus 1.1.]</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Historical context</strong></p>
+<p><strong>Honesty sidebar — the WAEC “capillary tube”
+distractor</strong></p>
+<p>Many WAEC questions from 1988, 1990, 1993 and 1998 contain the phrase
+<em>“capillary tube”</em> but do <strong>not</strong> test capillarity.
+They use the narrow tube as a <strong>Boyle’s-law gas-column
+apparatus</strong> — a mercury pellet traps a column of gas inside the
+tube, and the question tests <span class="math inline">\(PV =
+\text{const.}\)</span> or <span class="math inline">\(V/T =
+\text{const.}\)</span></p>
+<p><strong>Read the stem.</strong> If the question gives you volumes,
+temperatures or pressures of a trapped gas, it is a Week-7 gas-law
+question, not capillarity. If it talks about a liquid <em>rising</em> or
+<em>falling</em> in the tube, it is Week-5 capillarity.</p>
+</blockquote>
+</section>
+<section id="the-capillary-rise-formula" class="slide level2">
+<h2>The capillary rise formula</h2>
+<figure>
+<img data-src="images/fig_1.1_meniscus_comparison.png"
+alt="Figure 2.1: water rising in a glass capillary tube (concave meniscus) and mercury depressed in a glass capillary tube (convex meniscus)" />
+<figcaption aria-hidden="true">Figure 2.1: water rising in a glass
+capillary tube (concave meniscus) and mercury depressed in a glass
+capillary tube (convex meniscus)</figcaption>
+</figure>
+<p>The height to which a liquid rises in a narrow tube of radius <span
+class="math inline">\(r\)</span> is given (for Grade-10 qualitative use
+only) by</p>
+<p><span class="math display">\[\boxed{\;h \;=\;
+\dfrac{2T\cos\theta}{r\,\rho\,g}\;}\]</span></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(h\)</span></td>
+<td>capillary rise (positive) or depression (negative)</td>
+<td>m</td>
+</tr>
+<tr>
+<td><span class="math inline">\(T\)</span></td>
+<td>surface tension of the liquid</td>
+<td><span class="math inline">\(\text{N m}^{-1}\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(\theta\)</span></td>
+<td>contact angle at the liquid–glass boundary</td>
+<td>degrees</td>
+</tr>
+<tr>
+<td><span class="math inline">\(r\)</span></td>
+<td>internal radius of the tube</td>
+<td>m</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\rho\)</span></td>
+<td>density of the liquid</td>
+<td><span class="math inline">\(\text{kg m}^{-3}\)</span></td>
+</tr>
+<tr>
+<td><span class="math inline">\(g\)</span></td>
+<td>gravitational field strength (<span class="math inline">\(\approx
+9.8\ \text{N kg}^{-1}\)</span>)</td>
+<td><span class="math inline">\(\text{N kg}^{-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<h3 id="inverse-radius-rule-pedagogical-core">Inverse-radius rule
+(pedagogical core)</h3>
+<p>Because <span class="math inline">\(r\)</span> is in the
+<strong>denominator</strong>, <span class="math inline">\(h\)</span> is
+<strong>inversely proportional to <span
+class="math inline">\(r\)</span></strong>:</p>
+<p><span class="math display">\[h \;\propto\; \dfrac{1}{r}
+\qquad\Longrightarrow\qquad \text{halving } r \text{ doubles }
+h.\]</span></p>
+<figure>
+<img data-src="images/fig_2.2_rise_vs_radius.jpg"
+alt="Figure 2.2: five glass capillaries drawn to scale with the water height rising sharply as the tube radius falls (log scale)" />
+<figcaption aria-hidden="true">Figure 2.2: five glass capillaries drawn
+to scale with the water height rising sharply as the tube radius falls
+(log scale)</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<h3 id="factors-affecting-capillary-rise">Factors affecting capillary
+rise</h3>
+<ul>
+<li><strong>Liquid type</strong> (surface tension and contact angle).
+Water rises in clean glass; mercury depresses (because <span
+class="math inline">\(\theta &gt; 90^\circ\)</span>, so <span
+class="math inline">\(\cos\theta &lt; 0\)</span>).</li>
+<li><strong>Tube radius.</strong> Narrower tube → higher rise
+(inverse-radius rule).</li>
+<li><strong>Temperature.</strong> Surface tension <span
+class="math inline">\(T\)</span> decreases with temperature; so rise
+height falls as the liquid warms.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="applications">Applications</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Application</th>
+<th>How capillarity is used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blotting paper, chalk</td>
+<td>fine pores of fibre act as narrow capillaries drawing water up</td>
+</tr>
+<tr>
+<td>Oil lamp wick</td>
+<td>wick draws kerosene / oil upward from the reservoir</td>
+</tr>
+<tr>
+<td>Soil water → plant roots</td>
+<td>fine spaces between soil particles lift water to the roots</td>
+</tr>
+<tr>
+<td>Rising damp in a wall</td>
+<td>water climbs porous bricks from the ground</td>
+</tr>
+<tr>
+<td>Bricklayer’s <strong>damp-proof course</strong></td>
+<td>a plastic membrane between the ground and the wall
+<strong>blocks</strong> capillarity to prevent rising damp</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="worked-examples" class="slide level2">
+<h2>Worked examples</h2>
+</section>
+<section class="slide level2">
+
+<h3 id="example-1-i-do-meniscus-explanation">Example 1 — I Do (meniscus
+explanation)</h3>
+<blockquote>
+<p><em>WAEC 1988 Q40 — repeated from Lesson 1 as a transition.</em>
+Explain the concave meniscus of water in a glass capillary tube.</p>
+</blockquote>
+<p><strong>Narration.</strong> Water adheres more strongly to glass than
+it coheres to itself. At the tube wall the adhesive pull drags water
+molecules upward. The surface tension of the water then lifts the
+central column with the raised edge, giving a concave meniscus. In a
+narrow tube this is the mechanism of capillary
+<strong>rise</strong>.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="example-2-i-do-mercury-depression">Example 2 — I Do (mercury
+depression)</h3>
+<blockquote>
+<p><em>JAMB 2002, adapted.</em> A clean glass capillary tube is dipped
+into a dish of mercury. Describe and explain what happens.</p>
+</blockquote>
+<p><strong>Narration.</strong> Mercury coheres to itself more strongly
+than it adheres to glass (contact angle <span
+class="math inline">\(\theta \approx 140^\circ &gt; 90^\circ\)</span>,
+so <span class="math inline">\(\cos\theta &lt; 0\)</span>). The level
+inside the capillary falls <strong>below</strong> the level in the dish.
+The meniscus is convex.</p>
+</section>
+<section class="slide level2">
+
+<h3 id="example-3-we-do-inverse-radius-numerical">Example 3 — We Do
+(inverse-radius numerical)</h3>
+<blockquote>
+<p>Tube A has internal radius <span class="math inline">\(r_{A} = 1.0\
+\text{mm}\)</span>. Water rises <span class="math inline">\(h_{A} = 15\
+\text{mm}\)</span> in A. If tube B has internal radius <span
+class="math inline">\(r_{B} = 0.25\ \text{mm}\)</span>, estimate the
+rise <span class="math inline">\(h_{B}\)</span> in B.</p>
+</blockquote>
+<p><strong>Narration.</strong> Same liquid, same temperature → <span
+class="math inline">\(T\)</span>, <span
+class="math inline">\(\theta\)</span>, <span
+class="math inline">\(\rho\)</span>, <span
+class="math inline">\(g\)</span> unchanged. From <span
+class="math inline">\(h \propto 1/r\)</span>: <span
+class="math display">\[\dfrac{h_{B}}{h_{A}} \;=\; \dfrac{r_{A}}{r_{B}}
+\;=\; \dfrac{1.0}{0.25} \;=\; 4.\]</span> So <span
+class="math inline">\(h_{B} = 4 \times 15 = \mathbf{60\
+\text{mm}}\)</span>.</p>
+<blockquote>
+<p><strong>Common mistake</strong></p>
+<p><strong>Common mistake — forgetting mercury depresses</strong></p>
+<p>Students memorise <em>“water rises in capillary”</em> then transfer
+it to mercury. The signed value of <span
+class="math inline">\(\cos\theta\)</span> is what flips the direction of
+<span class="math inline">\(h\)</span>: <span
+class="math inline">\(\cos\theta &gt; 0\)</span> gives rise, <span
+class="math inline">\(\cos\theta &lt; 0\)</span> gives depression.</p>
+</blockquote>
+<blockquote>
+<p><strong>Common mistake</strong></p>
+<p><strong>Common mistake — inverse direction wrong</strong></p>
+<p>Students write <em>“smaller radius means smaller rise”</em>. Correct:
+<span class="math inline">\(h \propto 1/r\)</span> — <strong>smaller
+radius means greater rise</strong>.</p>
+</blockquote>
+</section>
+<section id="practice" class="slide level2">
+<h2>Practice</h2>
+<ol type="1">
+<li><em>(JAMB 2002, adapted MCQ.)</em> A narrow capillary tube is placed
+vertically in a dish of mercury. The mercury inside the tube:
+<strong>A</strong> rises; <strong>B</strong> falls; <strong>C</strong>
+stays level; <strong>D</strong> oscillates.</li>
+<li><em>(WAEC 2000-style, adapted.)</em> State <strong>two</strong>
+everyday examples of capillarity and briefly explain each.</li>
+<li>If water rises <span class="math inline">\(20\ \text{mm}\)</span> in
+a glass capillary of internal radius <span class="math inline">\(0.5\
+\text{mm}\)</span>, what height would it rise in a glass capillary of
+internal radius <span class="math inline">\(0.1\ \text{mm}\)</span> at
+the same temperature?</li>
+<li><em>(WAEC 2010-style, adapted theory.)</em> Why does a bricklayer
+insert a damp-proof course between the foundations and the brick
+wall?</li>
+</ol>
+<p><strong>Answers:</strong> 1 — <strong>B</strong>; 2 — e.g. blotting
+paper (adhesion water–fibre &gt; cohesion water–water); lamp wick
+(adhesion oil–wick &gt; cohesion oil–oil); 3 — <span
+class="math inline">\(20 \times (0.5/0.1) = \mathbf{100\
+\text{mm}}\)</span>; 4 — the course blocks the fine pore network,
+preventing capillary rise of ground water into the wall (rising
+damp).</p>
+</section>
+<section id="key-takeaways" class="slide level2">
+<h2>Key takeaways</h2>
+<ul>
+<li><strong>Capillarity</strong> = rise or fall of a liquid in a narrow
+tube.</li>
+<li>Formula (qualitative): <span class="math inline">\(h =
+\dfrac{2T\cos\theta}{r\rho g}\)</span> → <strong>halving <span
+class="math inline">\(r\)</span> doubles <span
+class="math inline">\(h\)</span></strong>.</li>
+<li>Water in clean glass → rises (adhesion &gt; cohesion, concave
+meniscus).</li>
+<li>Mercury in glass → falls (cohesion &gt; adhesion, convex
+meniscus).</li>
+<li>WAEC “capillary tube” questions on gas laws are <strong>not</strong>
+capillarity — read the stem.</li>
+</ul>
+</section>
+<section id="class-task" class="slide level2 task">
+<h2 class="task">Class task</h2>
+<p><em>Copy each question into your exercise book and answer
+there.</em></p>
+<ol type="1">
+<li>Define capillarity in one sentence.</li>
+<li>State three everyday examples of capillarity and give the physical
+reason for each.</li>
+<li>A capillary tube of radius <span class="math inline">\(0.4\
+\text{mm}\)</span> gives a water rise of <span
+class="math inline">\(37.5\ \text{mm}\)</span>. What rise would be
+observed in a tube of radius <span class="math inline">\(0.1\
+\text{mm}\)</span> at the same temperature?</li>
+<li>Why does mercury fall below the surrounding level when a glass
+capillary is dipped into it?</li>
+</ol>
+</section>
+<section id="homework" class="slide level2 homework">
+<h2 class="homework">Homework</h2>
+<p><em>Bring written answers to the next lesson.</em></p>
+<ol type="1">
+<li><em>(WAEC 2010-style theory.)</em> State <strong>three</strong>
+applications of capillarity and explain each briefly.</li>
+<li><em>(WAEC 2000-style.)</em> A bricklayer places a plastic sheet
+(damp-proof course) between the brick wall and the foundation. State the
+physical reason.</li>
+<li>Rank the following water rises in capillaries of radius <span
+class="math inline">\(r\)</span>, <span
+class="math inline">\(r/2\)</span> and <span
+class="math inline">\(r/4\)</span> (same liquid, same temperature):
+<span class="math inline">\(h_{r}\)</span>, <span
+class="math inline">\(h_{r/2}\)</span>, <span
+class="math inline">\(h_{r/4}\)</span> as a ratio.</li>
+<li>Rewrite the capillary rise formula and identify each symbol with its
+SI unit.</li>
+<li>State what happens to the capillary rise if the water is warmed.
+Give the physical reason in one sentence.</li>
+</ol>
+</section>
+    </div>
+  </div>
+
+  <script src="./revealjs/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="./revealjs/plugin/notes/notes.js"></script>
+  <script src="./revealjs/plugin/search/search.js"></script>
+  <script src="./revealjs/plugin/zoom/zoom.js"></script>
+  <script src="./revealjs/plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        math: {
+          mathjax: './mathjax/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
