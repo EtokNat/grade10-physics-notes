@@ -1,4 +1,5 @@
-/* Bold, high-conspicuity presentation style */
+/* Greenoak Grade 10 Physics — presentation style
+   Clean, bold, high-contrast. Each slide is a single idea students copy. */
 
 .reveal {
   font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
@@ -6,57 +7,82 @@
   color: #0a1626;
 }
 
-.reveal section {
-  font-size: 0.95em;
+.reveal .slides section {
   text-align: left;
-}
-
-/* Center the title slide only */
-.reveal section:first-of-type {
-  text-align: center;
+  padding: 0 2%;
 }
 
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
   font-weight: 900;
-  letter-spacing: -0.01em;
   color: #0b4f8c;
   text-transform: none;
-  margin-bottom: 0.4em;
+  letter-spacing: -0.005em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
-.reveal h1 { font-size: 2.1em; }
+.reveal h1 { font-size: 2.2em; }
 .reveal h2 { font-size: 1.55em; }
 .reveal h3 { font-size: 1.15em; color: #0a3a66; }
 
-.reveal p, .reveal li { font-weight: 700; line-height: 1.35; }
+/* Title slide — centred, larger, branded */
+.reveal section.title-slide,
+.reveal section.title-slide + section {
+  text-align: center;
+}
+.reveal section.title-slide h1.title { font-size: 2.6em; color: #0b4f8c; }
+.reveal section.title-slide p.subtitle { font-size: 1.3em; font-weight: 800; color: #0a3a66; }
+.reveal section.title-slide p.author { font-size: 1em; color: #444; font-weight: 700; }
+
+/* The first content slide after title-slide uses a large course banner */
+.reveal section:not(.title-slide) h1 {
+  font-size: 2.4em;
+  text-align: center;
+  color: #0b4f8c;
+}
+.reveal section:not(.title-slide) h1 + h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #0a3a66;
+  margin-top: 0.3em;
+}
+
+.reveal p, .reveal li { font-weight: 700; line-height: 1.4; font-size: 0.95em; }
 .reveal strong { font-weight: 900; color: #000; }
 .reveal em { font-weight: 700; font-style: italic; color: #333; }
 
-.reveal ul, .reveal ol { margin-left: 1em; }
-.reveal li { margin-bottom: 0.35em; }
+.reveal ul, .reveal ol { margin: 0.4em 0 0.4em 1.1em; }
+.reveal li { margin-bottom: 0.4em; }
 
 .reveal blockquote {
   background: #eef3ff;
   border-left: 6px solid #0044cc;
-  padding: 0.5em 0.9em;
-  margin: 0.4em 0;
-  font-weight: 700;
+  padding: 0.6em 1em;
+  margin: 0.5em auto;
+  font-weight: 800;
+  font-size: 1.05em;
   text-align: left;
   border-radius: 4px;
   color: #0a1626;
+  max-width: 90%;
 }
-.reveal blockquote strong { color: #003080; }
 
 .reveal table {
-  font-size: 0.78em;
+  font-size: 0.8em;
   font-weight: 700;
   border-collapse: collapse;
+  margin: 0.5em auto;
 }
 .reveal table th, .reveal table td {
   border: 1px solid #334;
-  padding: 0.3em 0.5em;
+  padding: 0.4em 0.7em;
 }
-.reveal table th { background: #0b4f8c; color: #fff; font-weight: 900; }
+.reveal table th {
+  background: #0b4f8c;
+  color: #fff;
+  font-weight: 900;
+}
+.reveal table tr:nth-child(even) { background: #f3f6fb; }
 
 .reveal pre, .reveal code {
   background: #f3f3f3;
@@ -65,24 +91,35 @@
 }
 
 .reveal img {
-  max-height: 420px;
+  max-height: 380px;
   display: block;
   margin: 0.4em auto;
   background: #fff;
+  border-radius: 4px;
 }
 
+/* MathJax equations — big and bold */
 .reveal mjx-container {
-  font-weight: 700;
+  font-size: 1.15em !important;
+}
+.reveal mjx-container[display="true"] {
+  margin: 0.6em 0 !important;
 }
 
-/* Classwork / Homework banner headings */
+/* Boxed display equations stand out */
+.reveal mjx-container mjx-mrow mjx-menclose {
+  font-weight: 900;
+}
+
+/* Class task / Homework banner slides */
 .reveal h2.task,
 .reveal h2.homework {
   color: #fff;
-  padding: 0.3em 0.6em;
-  border-radius: 6px;
+  padding: 0.35em 0.7em;
+  border-radius: 8px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.9em;
+  margin-bottom: 0.6em;
 }
 .reveal h2.task { background: #0b4f8c; }
 .reveal h2.homework { background: #a3310f; }
