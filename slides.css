@@ -89,8 +89,15 @@
   border-radius: 4px;
 }
 
-/* MathJax equations — bigger and bold */
-.reveal mjx-container { font-size: 1.1em !important; }
+/* MathJax equations — bigger and bold.
+   MathJax 3 draws its own glyphs so CSS font-weight is ignored.
+   Thicken the glyph outlines so equations match the bold body copy. */
+.reveal mjx-container {
+  font-size: 1.1em !important;
+  color: #0a1626;
+  -webkit-text-stroke: 0.55px currentColor;
+  text-stroke: 0.55px currentColor;
+}
 .reveal mjx-container[display="true"] { margin: 0.5em 0 !important; }
 
 /* Part divider slide — big centred headline */
