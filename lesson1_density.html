@@ -28,8 +28,24 @@
   <link rel="stylesheet" href="./revealjs/dist/theme/white.css" id="theme">
   <link rel="stylesheet" href="slides.css"/>
   <style>
-    .reveal mjx-container, .reveal mjx-container * {
-      -webkit-text-stroke: 0.045em currentColor;
+    /* Week 6 — force heavier weight on all prose + math for projector legibility */
+    .reveal p,
+    .reveal li,
+    .reveal ol,
+    .reveal ul,
+    .reveal td,
+    .reveal th,
+    .reveal blockquote,
+    .reveal blockquote p {
+      font-weight: 900;
+      -webkit-text-stroke: 0.35px currentColor;
+    }
+    .reveal strong { -webkit-text-stroke: 0.6px currentColor; }
+    .reveal em { font-weight: 900; -webkit-text-stroke: 0.3px currentColor; }
+    .reveal blockquote { color: #061024; }
+    .reveal mjx-container,
+    .reveal mjx-container * {
+      -webkit-text-stroke: 0.08em currentColor;
     }
   </style>
 </head>
