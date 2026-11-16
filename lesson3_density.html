@@ -95,19 +95,23 @@ above the waterline.</li>
 </section>
 <section id="the-free-body-picture" class="slide level2">
 <h2>The free-body picture</h2>
-<p><img data-src="images/fig_3.1_floating_block.png" width="750" /></p>
+<p><img data-src="images/fig_3.1_floating_block.png" width="750" />
+<br/><em style="font-size:0.7em;color:#555">After NSP Fig 4.38, p.156 — weight <span class="math inline">\(W\)</span> down, upthrust <span class="math inline">\(U\)</span> up; equilibrium means <span class="math inline">\(W = U\)</span>.</em></p>
 </section>
 <section id="law-of-flotation" class="slide level2">
 <h2>Law of Flotation</h2>
 <blockquote>
 <p><strong>A floating body displaces its own weight of the fluid in
-which it floats.</strong></p>
+which it floats.</strong> <em>(NSP Bk 2 §4.10, p.156.)</em></p>
 </blockquote>
 <ul>
 <li class="fragment">Equivalently: for a floating body, <strong>weight =
 upthrust</strong>. <span class="math display">\[W = U\]</span></li>
 <li class="fragment">The body floats at the depth at which exactly
 enough fluid is pushed aside to support it.</li>
+<li class="fragment"><strong>Common slip:</strong> “floating” does
+<strong>not</strong> mean upthrust is zero — upthrust equals the weight.
+Zero upthrust would mean zero submerged volume.</li>
 </ul>
 </section>
 <section id="derivation-fraction-submerged" class="slide level2">
@@ -141,7 +145,8 @@ submerged.</li>
 </section>
 <section id="the-iceberg" class="slide level2">
 <h2>The iceberg</h2>
-<p><img data-src="images/fig_3.2_iceberg.png" width="500" /></p>
+<p><img data-src="images/fig_3.2_iceberg.png" width="500" />
+<br/><em style="font-size:0.7em;color:#555">Teacher-authored visualisation of NSP Ex 4.22 (p.160): ice RD 0.92 → 92% submerged in pure water.</em></p>
 </section>
 <section id="worked-example-1-wood-in-water" class="slide level2">
 <h2>Worked Example 1 — wood in water</h2>
@@ -180,43 +185,10 @@ class="math display">\[1 - 0.893 = 0.107 \approx 11\%\]</span></li>
 real iceberg.</li>
 </ul>
 </section>
-<section id="worked-example-3-ship" class="slide level2">
-<h2>Worked Example 3 — ship</h2>
-<blockquote>
-<p>A ship of mass <span class="math inline">\(2.0 \times 10^6\
-\text{kg}\)</span> floats in seawater (<span class="math inline">\(\rho
-= 1030\ \text{kg m}^{-3}\)</span>). Calculate the volume of seawater it
-displaces. (<span class="math inline">\(g = 10\ \text{m
-s}^{-2}\)</span>.)</p>
-</blockquote>
-<ul>
-<li class="fragment"><strong>Weight of ship.</strong> <span
-class="math display">\[W = mg = 2.0 \times 10^6 \times 10 = 2.0 \times
-10^7\ \text{N}\]</span></li>
-<li class="fragment"><strong>Law of flotation:</strong> weight of
-displaced water = ship’s weight.</li>
-<li class="fragment">Volume of displaced water: <span
-class="math display">\[V_d = \dfrac{W}{\rho g} = \dfrac{2.0 \times
-10^7}{1030 \times 10}\]</span></li>
-<li class="fragment">Compute: <span class="math display">\[V_d \approx
-1943\ \text{m}^3\]</span></li>
-</ul>
-</section>
-<section id="common-mistake-floating-means-no-upthrust"
-class="slide level2">
-<h2>Common mistake — “floating means no upthrust”</h2>
-<ul>
-<li class="fragment">Floating <strong>does not</strong> mean upthrust is
-zero.</li>
-<li class="fragment">Upthrust is <strong>exactly equal</strong> to the
-weight.</li>
-<li class="fragment">Zero upthrust would mean zero submerged volume —
-the body would not touch the water at all.</li>
-</ul>
-</section>
 <section id="how-does-a-metal-ship-float" class="slide level2">
 <h2>How does a metal ship float?</h2>
-<p><img data-src="images/fig_3.4_ship.png" width="750" /></p>
+<p><img data-src="images/fig_3.4_ship.png" width="750" />
+<br/><em style="font-size:0.7em;color:#555">After NSP p.157 (ship + submarine vignette).</em></p>
 <ul>
 <li class="fragment">The hull is <strong>steel</strong> (ρ ≈ 7800 kg
 m⁻³) — denser than water.</li>
@@ -254,44 +226,15 @@ winter.</li>
 surface</strong> on the scale.</li>
 </ul>
 </section>
-<section id="hydrometer-construction" class="slide level2">
-<h2>Hydrometer construction</h2>
-<p><img data-src="images/fig_3.3_hydrometer.png" width="600" /></p>
+<section id="hydrometer-construction-and-principle" class="slide level2">
+<h2>Hydrometer — construction &amp; principle</h2>
+<p><img data-src="images/fig_3.3_hydrometer.png" width="600" />
+<br/><em style="font-size:0.7em;color:#555">After NSP Fig 4.42, p.161. Scale decreases upward: 0.6 at top, 1.1 at bottom.</em></p>
 <ul>
-<li class="fragment"><strong>Wide bulb</strong> at the bottom → large
-displacement, so it floats.</li>
-<li class="fragment"><strong>Lead shot</strong> below the bulb → keeps
-the stem vertical (low centre of gravity).</li>
-<li class="fragment"><strong>Thin stem</strong> with a scale → small
-change in density produces a large change in the depth it sinks, so the
-scale is sensitive.</li>
-</ul>
-</section>
-<section id="how-the-hydrometer-works" class="slide level2">
-<h2>How the hydrometer works</h2>
-<ul>
-<li class="fragment">Hydrometer has fixed weight <span
-class="math inline">\(W\)</span>.</li>
-<li class="fragment">In any liquid: <span class="math inline">\(W =
-\rho_L\, V_\text{sub}\, g\)</span>.</li>
-<li class="fragment">Denser liquid → <strong>smaller</strong> <span
-class="math inline">\(V_\text{sub}\)</span> → floats higher.</li>
-<li class="fragment">Less dense liquid → <strong>larger</strong> <span
-class="math inline">\(V_\text{sub}\)</span> → sinks deeper.</li>
-<li class="fragment">The stem scale is pre-calibrated so the reading at
-the surface is the <strong>RD</strong> of the liquid.</li>
-</ul>
-</section>
-<section id="why-the-stem-is-narrow" class="slide level2">
-<h2>Why the stem is narrow</h2>
-<ul>
-<li class="fragment">A narrow stem means a small change in density
-shifts the hydrometer up or down by a <strong>large</strong>
-distance.</li>
-<li class="fragment">Large spacing between scale marks → <strong>high
-sensitivity</strong> (easy to read to 0.001).</li>
-<li class="fragment">Fat stem would give a bunched scale and poor
-sensitivity.</li>
+<li class="fragment"><strong>Wide bulb</strong> at base → large displaced volume → enough upthrust to float.</li>
+<li class="fragment"><strong>Lead shot</strong> below bulb → low centre of gravity → stem stays vertical.</li>
+<li class="fragment"><strong>Thin stem</strong> → a small density change shifts the hydrometer by a large distance → high sensitivity (reads to 0.001).</li>
+<li class="fragment"><strong>Principle.</strong> Fixed weight <span class="math inline">\(W\)</span>; in any liquid <span class="math inline">\(W = \rho_L V_\text{sub} g\)</span>, so <span class="math inline">\(V_\text{sub} \propto 1/\rho_L\)</span>. Denser liquid → floats higher; less dense → sinks deeper. <em>(NSP p.161, boxed result <span class="math inline">\(\ell \propto 1/\rho\)</span>.)</em></li>
 </ul>
 </section>
 <section id="where-hydrometers-are-used" class="slide level2">
@@ -390,35 +333,27 @@ applications.</li>
 </section>
 <section id="class-task" class="slide level2 task">
 <h2 class="task">Class task</h2>
-<p>Copy each into your exercise book; show working; give units.</p>
+<p>Copy each into your exercise book; show working; give units. <em>(Methods on page cited.)</em></p>
 <ol type="1">
 <li>A block of density 750 kg m⁻³ floats in water. What fraction of its
-volume is above water?</li>
+volume is above water? <em>(Method: NSP Ex 4.22, p.160.)</em></li>
 <li>A ship of mass <span class="math inline">\(5.0 \times 10^5\)</span>
 kg floats in fresh water. Find the volume of water it displaces. (<span
-class="math inline">\(g = 10\)</span>.)</li>
-<li>State the Law of Flotation.</li>
+class="math inline">\(g = 10\)</span>.) <em>(Method: NSP Bk 2 §4.10 ship narrative, p.157.)</em></li>
+<li>State the Law of Flotation. <em>(NSP Bk 2 §4.10, boxed p.156.)</em></li>
 <li>Explain, in two sentences, why a hydrometer is made with a wide bulb
-at the bottom and a thin stem.</li>
+at the bottom and a thin stem. <em>(NSP Bk 2 §4.12, p.161–162.)</em></li>
 </ol>
 </section>
 <section id="homework" class="slide level2 homework">
 <h2 class="homework">Homework</h2>
-<p>Bring written answers to next week’s lesson.</p>
+<p>All questions are from <strong>New School Physics (M.W. Anyakoha), Book 2, Chapter 4 — Exercises 4</strong>. Open your textbook; copy the stem; show full working; give units.</p>
 <ol type="1">
-<li><em>(WAEC 2007.)</em> A wooden block of mass 800 g and density 500
-kg m⁻³ floats in water. Calculate the volume of the block that is
-submerged. (<span class="math inline">\(g = 10\)</span>.)</li>
-<li><em>(WAEC 2011.)</em> A hydrometer used to test the purity of milk
-is called a __.</li>
-<li><em>(JAMB 1992.)</em> A solid of density 2500 kg m⁻³ is placed in a
-liquid of density 800 kg m⁻³. State whether it floats or sinks and give
-a reason.</li>
-<li><em>(WAEC 2004.)</em> A ship floats higher in sea water than in
-fresh water. Give a reason.</li>
-<li>An iceberg (density 920 kg m⁻³) floats in sea water (density 1025 kg
-m⁻³). Calculate the percentage of the iceberg’s volume that is above the
-waterline.</li>
+<li><strong>NSP Bk 2, Ex 4, Q31(ii) (p.167).</strong> Find the mass of an iceberg which floats in sea water displacing 45 m³. (Density of sea water = 1030 kg m⁻³.)</li>
+<li><strong>NSP Bk 2, Ex 4, Q32 (p.167).</strong> State the Principle of Flotation. With the aid of a diagram, describe the features and mode of operation of the commercial hydrometer for RD range 0.6–1.1. Why are the stem graduations <em>not</em> linear, and why is the stem usually thin? A hydrometer has a weighted bulb of volume 30 cm³ and a uniform stem of cross-section 1 cm². When floating in water, 3 cm of the stem is immersed. What length of stem is immersed when it floats in a liquid of density 0.89 g cm⁻³?</li>
+<li><strong>NSP Bk 2, Ex 4, Q31(iii) (p.167).</strong> What is the tension in the cable holding a mine of mass 600 kg and volume 0.8 m³ to the sea bed, so that it is totally submerged? (Take <span class="math inline">\(\rho_{\text{sea water}} = 1030\)</span> kg m⁻³, <span class="math inline">\(g = 10\)</span> m s⁻².)</li>
+<li><strong>NSP Bk 2, Ex 4, Q37 (p.167).</strong> (a) State the law of flotation. (b) A balloon of mass 0.030 kg is being inflated with a gas of density 0.54 kg m⁻³. What will be the volume of the balloon when it just begins to rise in air of density 1.29 kg m⁻³? (<span class="math inline">\(g = 10\)</span> m s⁻².)</li>
+<li><strong>NSP Bk 2, Worked Ex 4.22 (p.160) — reposed with new numbers.</strong> The relative density of ice is 0.92. Find the fraction of a floating iceberg that is submerged in (a) pure water; (b) sea water of RD 1.03. Then find the <em>percentage above the waterline</em> in each case.</li>
 </ol>
 </section>
 <section id="what-we-learned-this-week" class="slide level2">
