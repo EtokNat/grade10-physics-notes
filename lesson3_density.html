@@ -54,6 +54,20 @@
     .reveal mjx-container * {
       -webkit-text-stroke: 0.08em currentColor;
     }
+    .reveal table.compare { border-collapse: collapse; font-size: 0.78em; }
+    .reveal table.compare th, .reveal table.compare td {
+      border: 1.5px solid #333; padding: 4px 8px; text-align: left;
+    }
+    .reveal table.compare th { background: #e8ecf5; }
+    .reveal .timebadge {
+      display:inline-block; font-size:0.55em; background:#204070; color:#fff;
+      padding:1px 8px; border-radius:10px; margin-left:0.5em; vertical-align:middle;
+      font-weight:900;
+    }
+    .reveal .note-cue {
+      font-size:0.68em; color:#204070; background:#eef3ff; border-left:4px solid #204070;
+      padding:4px 10px; margin-top:0.5em; font-weight:900;
+    }
   </style>
 </head>
 <body>
@@ -62,384 +76,178 @@
 
 <section id="title-slide">
   <h1 class="title">Density &amp; Relative Density — Lesson 3</h1>
-  <p class="subtitle">Flotation &amp; the Hydrometer</p>
+  <p class="subtitle">Flotation, Hydrometer &amp; Viscosity</p>
   <p class="author">Greenoak International School · Grade 10 Physics</p>
+  <p style="font-size:0.75em;margin-top:1em;">Strict timing: <strong>15 min</strong>. Flotation &amp; hydrometer = revision only; <em>viscosity is the new topic</em>.</p>
 </section>
 
-<section id="recall" class="slide level2">
-<h2>Recall</h2>
+<section id="flotation-hydrometer-revision" class="slide level2">
+<h2>Revision — flotation &amp; hydrometer <span class="timebadge">2 min</span></h2>
 <ul>
-<li class="fragment"><span class="math inline">\(\rho = m/V\)</span>.
-Water = 1000 kg m⁻³.</li>
-<li class="fragment"><span class="math inline">\(\text{RD} =
-\rho_\text{sub}/\rho_\text{water}\)</span>, no units.</li>
-<li class="fragment">Upthrust <span class="math inline">\(U =
-W_\text{fluid displaced} = \rho_f V_d g\)</span>.</li>
-<li class="fragment">RD &lt; 1 → <strong>floats</strong>. RD &gt; 1 →
-<strong>sinks</strong>.</li>
-<li class="fragment">Today: <em>how</em> does it float, and <em>how
-much</em> sticks out.</li>
+<li class="fragment"><strong>Law of flotation:</strong> a floating body displaces its own weight of fluid.
+<span class="math inline">\(W = U\)</span>.</li>
+<li class="fragment"><strong>Fraction submerged</strong>
+<span class="math inline">\(=\dfrac{V_\text{sub}}{V} = \dfrac{\rho_\text{body}}{\rho_\text{fluid}}\)</span>.
+E.g. ice in sea water → 89 % under, 11 % above.</li>
+<li class="fragment"><strong>Hydrometer:</strong> wide bulb + lead shot (upright) + narrow stem (sensitive). Floats <em>higher</em> in denser liquid.</li>
+<li class="fragment"><strong>Lactometer</strong> = hydrometer calibrated for milk; adulterated milk reads below 1.030.</li>
+</ul>
+<div class="note-cue">Cold-call one student per bullet. No re-teaching. Move on at 2 min.</div>
+</section>
+
+<section id="viscosity-definition" class="slide level2">
+<h2>Viscosity — what it is <span class="timebadge">2½ min</span></h2>
+<div style="background:#fff7cc;border-left:6px solid #d4a000;padding:0.5em 1em;margin:0.4em 0;font-weight:900;font-size:1.05em;">
+Viscosity is the <strong>internal friction between layers of a liquid or gas in motion</strong>.
+</div>
+<ul>
+<li class="fragment"><strong>Everyday evidence.</strong> Water pours faster than honey; a stone falls faster through water than through engine oil or glycerine.</li>
+<li class="fragment"><strong>High viscosity</strong> — honey, glycerine, engine oil, castor oil.</li>
+<li class="fragment"><strong>Low viscosity</strong> — water, petrol, alcohol.</li>
+</ul>
+<div class="note-cue">Cold-call 2 students to repeat the yellow sentence verbatim. WAEC marks the exact phrase.</div>
+</section>
+
+<section id="viscosity-terminal-velocity" class="slide level2">
+<h2>Terminal velocity — force balance <span class="timebadge">3 min</span></h2>
+<div style="display:flex;gap:1em;align-items:flex-start;">
+  <div style="flex:0 0 30%;">
+    <svg viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <rect x="20" y="20" width="180" height="220" fill="#bcd9ff" stroke="#204070" stroke-width="2"/>
+      <circle cx="110" cy="130" r="22" fill="#2a2a2a"/>
+      <line x1="75" y1="150" x2="75" y2="85" stroke="#004400" stroke-width="3"/>
+      <polygon points="70,90 75,78 80,90" fill="#004400"/>
+      <text x="62" y="78" font-family="serif" font-style="italic" font-weight="900" font-size="18" fill="#004400">U</text>
+      <line x1="145" y1="150" x2="145" y2="85" stroke="#004400" stroke-width="3"/>
+      <polygon points="140,90 145,78 150,90" fill="#004400"/>
+      <text x="152" y="78" font-family="serif" font-style="italic" font-weight="900" font-size="18" fill="#004400">V</text>
+      <line x1="110" y1="155" x2="110" y2="220" stroke="#8a0000" stroke-width="3"/>
+      <polygon points="105,215 110,228 115,215" fill="#8a0000"/>
+      <text x="118" y="210" font-family="serif" font-weight="900" font-size="16" fill="#8a0000">W = mg</text>
+    </svg>
+    <p style="text-align:center;font-size:0.65em;margin:0;">Sphere in a viscous liquid.</p>
+  </div>
+  <div style="flex:1;">
+<ul>
+<li class="fragment">Three forces on a falling stone: <em>W</em> down, <em>U</em> up, viscous drag <em>V</em> up.</li>
+<li class="fragment">Newton's law:
+<span class="math display">\[W - V - U = ma\]</span></li>
+<li class="fragment"><em>V</em> grows with speed → eventually <em>a</em> = 0 →
+<span class="math display">\[\boxed{\,V = W - U\,}\]</span>
+This is <strong>terminal velocity</strong>.</li>
+<li class="fragment" style="background:#eef7ee;padding:4px 8px;border-left:4px solid #090;">
+<strong>Mini-example (I Do, 30 s).</strong> Stone of weight <em>W</em> = 6 N, upthrust <em>U</em> = 1 N.
+At terminal velocity: <em>V</em> = 6 − 1 = <strong>5 N</strong>.</li>
+</ul>
+  </div>
+</div>
+</section>
+
+<section id="viscosity-vt-curve" class="slide level2">
+<h2>Speed–time curve <span class="timebadge">1½ min</span></h2>
+<div style="display:flex;gap:1em;align-items:center;">
+  <div style="flex:0 0 46%;">
+    <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <line x1="40" y1="200" x2="340" y2="200" stroke="#000" stroke-width="2"/>
+      <line x1="40" y1="200" x2="40" y2="20" stroke="#000" stroke-width="2"/>
+      <polygon points="340,200 332,196 332,204" fill="#000"/>
+      <polygon points="40,20 36,28 44,28" fill="#000"/>
+      <text x="320" y="220" font-family="serif" font-weight="900" font-size="15">Time</text>
+      <text x="8" y="30" font-family="serif" font-style="italic" font-weight="900" font-size="18">v</text>
+      <line x1="40" y1="55" x2="330" y2="55" stroke="#555" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="8" y="60" font-family="serif" font-style="italic" font-weight="900" font-size="16">v₀</text>
+      <path d="M 40 200 Q 90 200 130 140 T 260 70 L 330 60" stroke="#0046a0" stroke-width="3" fill="none"/>
+      <text x="100" y="175" font-family="serif" font-weight="900" font-size="14" fill="#0046a0">acceleration</text>
+      <text x="200" y="45" font-family="serif" font-weight="900" font-size="14" fill="#0046a0">terminal velocity</text>
+    </svg>
+  </div>
+  <div style="flex:1;">
+<ul>
+<li class="fragment">Curve steep at first (<em>V</em> small, so <em>a</em> large).</li>
+<li class="fragment">Flattens as <em>V</em> grows.</li>
+<li class="fragment">Levels off at <strong>v₀</strong> — terminal velocity.</li>
+<li class="fragment"><strong>Exam cue.</strong> "Why do raindrops not accelerate forever?" → <em>viscous drag grows until it balances weight minus upthrust → constant speed.</em></li>
+</ul>
+  </div>
+</div>
+</section>
+
+<section id="viscosity-temperature-comparison" class="slide level2">
+<h2>Temperature &amp; comparison with friction <span class="timebadge">2½ min</span></h2>
+<div style="display:flex;gap:1em;align-items:flex-start;">
+  <div style="flex:0 0 36%;">
+    <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <line x1="40" y1="175" x2="300" y2="175" stroke="#000" stroke-width="2"/>
+      <line x1="40" y1="175" x2="40" y2="20" stroke="#000" stroke-width="2"/>
+      <polygon points="300,175 292,171 292,179" fill="#000"/>
+      <polygon points="40,20 36,28 44,28" fill="#000"/>
+      <text x="240" y="195" font-family="serif" font-weight="900" font-size="13">Temperature</text>
+      <text x="4" y="32" font-family="serif" font-style="italic" font-weight="900" font-size="15">η</text>
+      <path d="M 50 35 C 100 60, 140 125, 200 155 S 280 170, 295 172" stroke="#8a0000" stroke-width="3" fill="none"/>
+      <text x="110" y="90" font-family="serif" font-weight="900" font-size="12" fill="#8a0000">liquid: η falls as T rises</text>
+    </svg>
+    <ul style="font-size:0.85em;margin-top:0.4em;">
+      <li><strong>Liquids:</strong> η <strong>falls</strong> with T.</li>
+      <li><strong>Gases:</strong> η <strong>rises</strong> with T.</li>
+    </ul>
+  </div>
+  <div style="flex:1;">
+<table class="compare" style="width:100%;">
+<thead><tr><th></th><th>Solid friction</th><th>Viscosity</th></tr></thead>
+<tbody>
+<tr><td><strong>Where?</strong></td><td>Solids</td><td>Liquids &amp; gases</td></tr>
+<tr><td><strong>Depends on area?</strong></td><td>No</td><td>Yes</td></tr>
+<tr><td><strong>Needs normal reaction?</strong></td><td>Yes</td><td>No</td></tr>
+<tr><td><strong>Depends on relative velocity?</strong></td><td>No</td><td>Yes</td></tr>
+<tr><td colspan="3" style="background:#f6f6f6;"><strong>Both</strong> oppose relative motion and depend on the materials in contact.</td></tr>
+</tbody>
+</table>
+  </div>
+</div>
+</section>
+
+<section id="viscosity-lubricants" class="slide level2">
+<h2>Lubricants <span class="timebadge">1 min</span></h2>
+<ul>
+<li class="fragment"><strong>Oils and grease</strong> are used to keep metal surfaces in engines from rubbing — their viscosity is the key.</li>
+<li class="fragment"><strong>Water is not a lubricant</strong> — its viscosity is too low.</li>
+<li class="fragment"><strong>At high T</strong> an engine oil's viscosity drops, so its lubricating effect weakens. That is why engines need coolant.</li>
 </ul>
 </section>
-<section id="the-floating-puzzle" class="slide level2">
-<h2>The floating puzzle</h2>
-<ul>
-<li class="fragment">A wood block of density 500 kg m⁻³ is dropped in
-water (1000 kg m⁻³).</li>
-<li class="fragment">It <strong>floats</strong> — some of it sticks up
-above the waterline.</li>
-<li class="fragment"><em>How much</em> is above the waterline?</li>
-<li class="fragment">Answer: exactly as much as needed to make upthrust
-= weight.</li>
-</ul>
-</section>
-<section id="the-free-body-picture" class="slide level2">
-<h2>The free-body picture</h2>
-<p><img data-src="images/fig_3.1_floating_block.png" width="750" /></p>
-</section>
-<section id="law-of-flotation" class="slide level2">
-<h2>Law of Flotation</h2>
-<blockquote>
-<p><strong>A floating body displaces its own weight of the fluid in
-which it floats.</strong></p>
-</blockquote>
-<ul>
-<li class="fragment">Equivalently: for a floating body, <strong>weight =
-upthrust</strong>. <span class="math display">\[W = U\]</span></li>
-<li class="fragment">The body floats at the depth at which exactly
-enough fluid is pushed aside to support it.</li>
-</ul>
-</section>
-<section id="derivation-fraction-submerged" class="slide level2">
-<h2>Derivation — fraction submerged</h2>
-<ul>
-<li class="fragment">Weight of body: <span class="math inline">\(W =
-\rho_\text{body}\, V\, g\)</span>.</li>
-<li class="fragment">Upthrust from displaced fluid: <span
-class="math inline">\(U = \rho_\text{fluid}\, V_\text{sub}\,
-g\)</span>.</li>
-<li class="fragment">At flotation, <span class="math inline">\(W =
-U\)</span>: <span class="math display">\[\rho_\text{body}\, V\, g =
-\rho_\text{fluid}\, V_\text{sub}\, g\]</span></li>
-<li class="fragment">Cancel <span class="math inline">\(g\)</span> and
-rearrange: <span class="math display">\[\boxed{\ \dfrac{V_\text{sub}}{V}
-= \dfrac{\rho_\text{body}}{\rho_\text{fluid}}\ }\]</span></li>
-</ul>
-</section>
-<section id="what-the-formula-says" class="slide level2">
-<h2>What the formula says</h2>
-<ul>
-<li class="fragment">The <strong>fraction submerged</strong> equals the
-<strong>ratio of densities</strong>.</li>
-<li class="fragment">For an object floating in <strong>water</strong>,
-the fraction submerged = <strong>RD</strong> of the body.</li>
-<li class="fragment">Example: wood of RD 0.5 → <strong>half</strong>
-submerged, half above water.</li>
-<li class="fragment">Example: ice of RD 0.92 → <strong>92 %</strong>
-submerged.</li>
-</ul>
-</section>
-<section id="the-iceberg" class="slide level2">
-<h2>The iceberg</h2>
-<p><img data-src="images/fig_3.2_iceberg.png" width="500" /></p>
-</section>
-<section id="worked-example-1-wood-in-water" class="slide level2">
-<h2>Worked Example 1 — wood in water</h2>
-<blockquote>
-<p>A wooden block has density <span class="math inline">\(600\ \text{kg
-m}^{-3}\)</span>. It floats in water of density <span
-class="math inline">\(1000\ \text{kg m}^{-3}\)</span>. What fraction of
-the block is below the waterline?</p>
-</blockquote>
-<ul>
-<li class="fragment"><strong>Formula.</strong> <span
-class="math display">\[\dfrac{V_\text{sub}}{V} =
-\dfrac{\rho_\text{body}}{\rho_\text{fluid}}\]</span></li>
-<li class="fragment"><strong>Substitute.</strong> <span
-class="math display">\[\dfrac{V_\text{sub}}{V} = \dfrac{600}{1000} =
-0.60\]</span></li>
-<li class="fragment"><strong>Interpret.</strong> 60 % of the wood is
-under water; 40 % is above.</li>
-</ul>
-</section>
-<section id="worked-example-2-iceberg" class="slide level2">
-<h2>Worked Example 2 — iceberg</h2>
-<blockquote>
-<p>Seawater has density <span class="math inline">\(1030\ \text{kg
-m}^{-3}\)</span> and ice has density <span class="math inline">\(920\
-\text{kg m}^{-3}\)</span>. What fraction of an iceberg is above the
-water?</p>
-</blockquote>
-<ul>
-<li class="fragment"><strong>Fraction submerged.</strong> <span
-class="math display">\[\dfrac{V_\text{sub}}{V} = \dfrac{920}{1030} =
-0.893\]</span></li>
-<li class="fragment"><strong>Fraction above.</strong> <span
-class="math display">\[1 - 0.893 = 0.107 \approx 11\%\]</span></li>
-<li class="fragment">So “90 % below, 10 % above” is roughly right for a
-real iceberg.</li>
-</ul>
-</section>
-<section id="worked-example-3-ship" class="slide level2">
-<h2>Worked Example 3 — ship</h2>
-<blockquote>
-<p>A ship of mass <span class="math inline">\(2.0 \times 10^6\
-\text{kg}\)</span> floats in seawater (<span class="math inline">\(\rho
-= 1030\ \text{kg m}^{-3}\)</span>). Calculate the volume of seawater it
-displaces. (<span class="math inline">\(g = 10\ \text{m
-s}^{-2}\)</span>.)</p>
-</blockquote>
-<ul>
-<li class="fragment"><strong>Weight of ship.</strong> <span
-class="math display">\[W = mg = 2.0 \times 10^6 \times 10 = 2.0 \times
-10^7\ \text{N}\]</span></li>
-<li class="fragment"><strong>Law of flotation:</strong> weight of
-displaced water = ship’s weight.</li>
-<li class="fragment">Volume of displaced water: <span
-class="math display">\[V_d = \dfrac{W}{\rho g} = \dfrac{2.0 \times
-10^7}{1030 \times 10}\]</span></li>
-<li class="fragment">Compute: <span class="math display">\[V_d \approx
-1943\ \text{m}^3\]</span></li>
-</ul>
-</section>
-<section id="common-mistake-floating-means-no-upthrust"
-class="slide level2">
-<h2>Common mistake — “floating means no upthrust”</h2>
-<ul>
-<li class="fragment">Floating <strong>does not</strong> mean upthrust is
-zero.</li>
-<li class="fragment">Upthrust is <strong>exactly equal</strong> to the
-weight.</li>
-<li class="fragment">Zero upthrust would mean zero submerged volume —
-the body would not touch the water at all.</li>
-</ul>
-</section>
-<section id="how-does-a-metal-ship-float" class="slide level2">
-<h2>How does a metal ship float?</h2>
-<p><img data-src="images/fig_3.4_ship.png" width="750" /></p>
-<ul>
-<li class="fragment">The hull is <strong>steel</strong> (ρ ≈ 7800 kg
-m⁻³) — denser than water.</li>
-<li class="fragment">But most of the ship’s volume is
-<strong>air</strong> inside the hull.</li>
-<li class="fragment">The <strong>average</strong> density (steel + air)
-is <strong>less than</strong> water.</li>
-<li class="fragment">So the ship can displace enough water to supply
-upthrust = weight.</li>
-</ul>
-</section>
-<section id="ship-in-salt-water-vs-river-water" class="slide level2">
-<h2>Ship in salt water vs river water</h2>
-<ul>
-<li class="fragment">Salt water denser than river water.</li>
-<li class="fragment">Same ship, same weight → <strong>less water
-needed</strong> to supply the upthrust.</li>
-<li class="fragment">So the ship rides <strong>higher</strong> in salt
-water, <strong>lower</strong> in fresh (river) water.</li>
-<li class="fragment">This is why ships carry a <strong>Plimsoll
-mark</strong> — different load-lines for salt and fresh, tropics and
-winter.</li>
-</ul>
-</section>
-<section id="the-hydrometer" class="slide level2">
-<h2>The Hydrometer</h2>
-<ul>
-<li class="fragment">Device that measures the <strong>density</strong>
-(or <strong>RD</strong>) of a liquid directly.</li>
-<li class="fragment">Is just a sealed glass tube that
-<strong>floats</strong> vertically.</li>
-<li class="fragment">The <strong>deeper</strong> it sinks, the
-<strong>less dense</strong> the liquid.</li>
-<li class="fragment">Reading is taken at the <strong>liquid
-surface</strong> on the scale.</li>
-</ul>
-</section>
-<section id="hydrometer-construction" class="slide level2">
-<h2>Hydrometer construction</h2>
-<p><img data-src="images/fig_3.3_hydrometer.png" width="600" /></p>
-<ul>
-<li class="fragment"><strong>Wide bulb</strong> at the bottom → large
-displacement, so it floats.</li>
-<li class="fragment"><strong>Lead shot</strong> below the bulb → keeps
-the stem vertical (low centre of gravity).</li>
-<li class="fragment"><strong>Thin stem</strong> with a scale → small
-change in density produces a large change in the depth it sinks, so the
-scale is sensitive.</li>
-</ul>
-</section>
-<section id="how-the-hydrometer-works" class="slide level2">
-<h2>How the hydrometer works</h2>
-<ul>
-<li class="fragment">Hydrometer has fixed weight <span
-class="math inline">\(W\)</span>.</li>
-<li class="fragment">In any liquid: <span class="math inline">\(W =
-\rho_L\, V_\text{sub}\, g\)</span>.</li>
-<li class="fragment">Denser liquid → <strong>smaller</strong> <span
-class="math inline">\(V_\text{sub}\)</span> → floats higher.</li>
-<li class="fragment">Less dense liquid → <strong>larger</strong> <span
-class="math inline">\(V_\text{sub}\)</span> → sinks deeper.</li>
-<li class="fragment">The stem scale is pre-calibrated so the reading at
-the surface is the <strong>RD</strong> of the liquid.</li>
-</ul>
-</section>
-<section id="why-the-stem-is-narrow" class="slide level2">
-<h2>Why the stem is narrow</h2>
-<ul>
-<li class="fragment">A narrow stem means a small change in density
-shifts the hydrometer up or down by a <strong>large</strong>
-distance.</li>
-<li class="fragment">Large spacing between scale marks → <strong>high
-sensitivity</strong> (easy to read to 0.001).</li>
-<li class="fragment">Fat stem would give a bunched scale and poor
-sensitivity.</li>
-</ul>
-</section>
-<section id="where-hydrometers-are-used" class="slide level2">
-<h2>Where hydrometers are used</h2>
-<ul>
-<li class="fragment"><strong>Lead-acid car batteries</strong> — RD of
-the acid tells the state of charge.</li>
-<li class="fragment"><strong>Breweries / wine</strong> — RD of the wort
-tracks sugar level during fermentation.</li>
-<li class="fragment"><strong>Dairies</strong> — the
-<strong>lactometer</strong> is a hydrometer calibrated for milk;
-adulterated (watered) milk has lower RD.</li>
-<li class="fragment"><strong>Petrol stations</strong> — checking fuel
-density to detect adulteration.</li>
-</ul>
-</section>
-<section id="worked-example-4-hydrometer-reading" class="slide level2">
-<h2>Worked Example 4 — hydrometer reading</h2>
-<blockquote>
-<p>A hydrometer floats with <strong>20 cm</strong> of its stem above the
-surface in water and only <strong>8 cm</strong> of its stem above the
-surface in a liquid. The uniform stem has cross-section <strong><span
-class="math inline">\(0.50\ \text{cm}^2\)</span></strong> and the whole
-hydrometer has mass <strong>30 g</strong>. Volume of the bulb =
-<strong>26 cm³</strong>. Find the RD of the liquid.</p>
-</blockquote>
-<ul>
-<li class="fragment"><strong>Volume submerged in water.</strong> Total
-volume − stem-above volume.
-<ul>
-<li class="fragment">Total volume = 26 + length_of_stem × 0.5 (keep as a
-check only).</li>
-<li class="fragment">Submerged in water: <span class="math inline">\(V_w
-= 26 + (L - 20)\times 0.5\)</span>, where <span
-class="math inline">\(L\)</span> is stem length.</li>
-</ul></li>
-<li class="fragment">Easier: the <strong>mass stays 30 g</strong>, so
-<span class="math inline">\(V_\text{sub}\)</span> scales as <span
-class="math inline">\(1/\rho\)</span>.</li>
-<li class="fragment">In water: <span class="math inline">\(m = \rho_w
-V_w \Rightarrow V_w = 30/1.0 = 30\ \text{cm}^3\)</span>.</li>
-<li class="fragment">In liquid: <span class="math inline">\(V_L = V_w -
-\Delta\)</span>, where <span class="math inline">\(\Delta = (20 -
-8)\times 0.5 = 6\ \text{cm}^3\)</span> <strong>deeper → less</strong>
-submerged? no, deeper = more submerged. Here only 8 cm above → sank
-<strong>deeper</strong> → <span class="math inline">\(V_L = V_w + 6 =
-36\ \text{cm}^3\)</span>.</li>
-<li class="fragment"><span class="math inline">\(\text{RD} = V_w / V_L =
-30/36 = 0.83\)</span>.</li>
-</ul>
-</section>
-<section id="dont-confuse-these-instruments" class="slide level2 task">
-<h2 class="task">Don’t confuse these instruments</h2>
-<ul>
-<li class="fragment"><strong>Hydrometer</strong> — measures
-<strong>relative density of a liquid</strong>.</li>
-<li class="fragment"><strong>Hygrometer</strong> — measures
-<strong>humidity</strong> (water vapour in air).</li>
-<li class="fragment"><strong>Hypsometer</strong> — measures
-<strong>altitude</strong> (via boiling point).</li>
-<li class="fragment"><strong>Barometer</strong> — measures
-<strong>atmospheric pressure</strong>.</li>
-<li class="fragment"><strong>Manometer</strong> — measures a
-<strong>pressure difference</strong> in a fluid.</li>
-<li class="fragment"><strong>Spectrometer</strong> — splits
-<strong>light</strong> into its spectrum (unrelated).</li>
-<li class="fragment">WAEC frequently puts these six as MCQ
-distractors.</li>
-</ul>
-</section>
-<section id="lactometer-milk-test" class="slide level2">
-<h2>Lactometer — milk test</h2>
-<ul>
-<li class="fragment">Pure cow’s milk has RD about
-<strong>1.030</strong>.</li>
-<li class="fragment">Added water lowers the RD toward 1.000.</li>
-<li class="fragment">A lactometer calibrated between 1.000 and 1.050
-lets a farmer or trader detect adulteration quickly.</li>
-<li class="fragment">WAEC 2011 asked this question directly.</li>
-</ul>
-</section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<ul>
-<li class="fragment"><strong>Law of flotation.</strong> Floating body
-displaces its own weight of fluid. <span class="math display">\[W =
-U\]</span></li>
-<li class="fragment"><strong>Fraction submerged.</strong> <span
-class="math display">\[\dfrac{V_\text{sub}}{V} =
-\dfrac{\rho_\text{body}}{\rho_\text{fluid}}\]</span></li>
-<li class="fragment">Hydrometer: floats; reads lower in denser liquid;
-reads higher (sinks deeper) in less dense liquid.</li>
-<li class="fragment">Plimsoll line, batteries, lactometer — real-world
-applications.</li>
-</ul>
-</section>
+
 <section id="class-task" class="slide level2 task">
-<h2 class="task">Class task</h2>
-<p>Copy each into your exercise book; show working; give units.</p>
+<h2 class="task">Class task <span class="timebadge">2 min</span></h2>
+<p>Write the answers in your exercise book.</p>
 <ol type="1">
-<li>A block of density 750 kg m⁻³ floats in water. What fraction of its
-volume is above water?</li>
-<li>A ship of mass <span class="math inline">\(5.0 \times 10^5\)</span>
-kg floats in fresh water. Find the volume of water it displaces. (<span
-class="math inline">\(g = 10\)</span>.)</li>
-<li>State the Law of Flotation.</li>
-<li>Explain, in two sentences, why a hydrometer is made with a wide bulb
-at the bottom and a thin stem.</li>
+<li class="fragment"><strong>Define viscosity.</strong> (One sentence — the yellow box.)</li>
+<li class="fragment">A stone falls through palm oil. At terminal velocity the viscous force on it is <strong>4 N</strong> and the upthrust is <strong>1.5 N</strong>. Find the weight of the stone. <em>(Mirrors the mini-example.)</em></li>
 </ol>
+<div class="note-cue">Answers: (1) verbatim yellow sentence. (2) At terminal velocity <em>V</em> = <em>W</em> − <em>U</em> → <em>W</em> = 4 + 1.5 = <strong>5.5 N</strong>.</div>
 </section>
+
 <section id="homework" class="slide level2 homework">
-<h2 class="homework">Homework</h2>
-<p>Bring written answers to next week’s lesson.</p>
+<h2 class="homework">Homework (for next lesson)</h2>
 <ol type="1">
-<li><em>(WAEC 2007.)</em> A wooden block of mass 800 g and density 500
-kg m⁻³ floats in water. Calculate the volume of the block that is
-submerged. (<span class="math inline">\(g = 10\)</span>.)</li>
-<li><em>(WAEC 2011.)</em> A hydrometer used to test the purity of milk
-is called a __.</li>
-<li><em>(JAMB 1992.)</em> A solid of density 2500 kg m⁻³ is placed in a
-liquid of density 800 kg m⁻³. State whether it floats or sinks and give
-a reason.</li>
-<li><em>(WAEC 2004.)</em> A ship floats higher in sea water than in
-fresh water. Give a reason.</li>
-<li>An iceberg (density 920 kg m⁻³) floats in sea water (density 1025 kg
-m⁻³). Calculate the percentage of the iceberg’s volume that is above the
-waterline.</li>
+<li>State <em>one</em> similarity and <em>two</em> differences between viscosity and solid friction.</li>
+<li>Explain why raindrops fall with a constant (terminal) velocity instead of accelerating all the way to the ground.</li>
+<li>Sketch a speed–time graph for a steel ball dropped into glycerine; label the acceleration region and the terminal velocity.</li>
+<li>Describe, with a labelled diagram, an experiment to compare the viscosities of engine oil and glycerine.</li>
+<li><em>(WAEC 2007.)</em> A wooden block of mass 800 g and density 500 kg m⁻³ floats in water. Calculate the volume submerged. (<span class="math inline">\(g = 10\ \text{m s}^{-2}\)</span>.)</li>
 </ol>
 </section>
-<section id="what-we-learned-this-week" class="slide level2">
-<h2>What we learned this week</h2>
+
+<section id="summary" class="slide level2">
+<h2>What we learned</h2>
 <ul>
-<li class="fragment"><strong>Density</strong> <span
-class="math inline">\(\rho = m/V\)</span>. Lesson 1.</li>
-<li class="fragment"><strong>Relative density</strong> <span
-class="math inline">\(\text{RD} =
-\rho_\text{sub}/\rho_\text{water}\)</span>; no unit. Lesson 1.</li>
-<li class="fragment"><strong>Upthrust</strong> <span
-class="math inline">\(U = \rho_f V_d g =\)</span> weight of fluid
-displaced (Archimedes). Lesson 2.</li>
-<li class="fragment">Apparent weight <span class="math inline">\(W&#39;
-= W - U\)</span>; RD from weights. Lesson 2.</li>
-<li class="fragment"><strong>Flotation.</strong> <span
-class="math inline">\(W = U\)</span>; fraction submerged = <span
-class="math inline">\(\rho_\text{body}/\rho_\text{fluid}\)</span>.
-Lesson 3.</li>
-<li class="fragment"><strong>Hydrometer.</strong> Variable-depth
-flotation reads RD directly. Lesson 3.</li>
+<li class="fragment"><strong>Flotation.</strong>
+<span class="math inline">\(W = U\)</span>;
+<span class="math inline">\(V_\text{sub}/V = \rho_\text{body}/\rho_\text{fluid}\)</span>.
+Hydrometer / lactometer read RD from how deep they float.</li>
+<li class="fragment"><strong>Viscosity</strong> = internal friction between layers of a liquid or gas in motion.</li>
+<li class="fragment"><strong>Terminal velocity.</strong>
+<span class="math inline">\(V = W - U\)</span> when <em>a</em> = 0.</li>
+<li class="fragment"><strong>Temperature.</strong> Liquid viscosity falls with T; gas viscosity rises with T.</li>
+<li class="fragment"><strong>Applications.</strong> Lubricants (oil, grease) — not water.</li>
 </ul>
 </section>
     </div>
