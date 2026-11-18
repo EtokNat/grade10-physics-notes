@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Greenoak International School · Grade 10 Physics">
+  <title>Motion I — Lesson 2 · Force &amp; Circular Motion</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./revealjs/dist/reset.css">
+  <link rel="stylesheet" href="./revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="./revealjs/dist/theme/white.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+</head>
+<body>
+  <div class="reveal"><div class="slides">
+
+<section id="title-slide" class="title-slide">
+  <h1 class="title">Motion I — Lesson 2</h1>
+  <p class="subtitle">Force &amp; Circular Motion</p>
+  <p class="author">Greenoak International School · Grade 10 Physics · Week 7</p>
+</section>
+
+<section class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li><strong>Define</strong> force and state its SI unit.</li>
+<li><strong>Describe</strong> the effects of a force and distinguish <em>contact</em> forces from <em>force fields</em>.</li>
+<li><strong>Describe</strong> uniform circular motion and give everyday examples.</li>
+<li><strong>State and use</strong> the formulas for centripetal acceleration (\(a = v^2/r\)) and centripetal force (\(F = mv^2/r\)).</li>
+<li><strong>Distinguish</strong> centripetal from centrifugal force and relate them to Newton's third law.</li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Prior knowledge check</h2>
+<ul>
+<li>A body at rest stays at rest until acted on (Week 7, Lesson 1).</li>
+<li>Motion can be <strong>translational</strong> (straight line) or <strong>rotational / circular</strong> (around an axis or in a loop).</li>
+<li>SI unit of force is the newton (N). A 1 kg mass weighs about 10 N on the Earth.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Why do we need the idea of force?</h2>
+<ul>
+<li>A block on a table <strong>stays at rest</strong> until something pushes or pulls it.</li>
+<li class="fragment">A trolley gliding on a perfectly smooth, straight surface would keep moving <strong>uniformly</strong> unless something acted on it.</li>
+<li class="fragment">Something must <strong>cause</strong> a change of motion — starting, stopping, speeding up, slowing down, or turning.</li>
+<li class="fragment">That cause is a <strong>force</strong>.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>What is a force?</h2>
+<blockquote>
+<p><strong>A force is an agent that changes or tends to change the state of rest or of uniform motion in a straight line of a body.</strong></p>
+</blockquote>
+<ul>
+<li class="fragment">SI unit: the <strong>newton (N)</strong>.</li>
+<li class="fragment">Common everyday words for a force: a <strong>push</strong>, a <strong>pull</strong>, a <strong>tension</strong>, a <strong>reaction</strong>.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Effects of a force</h2>
+<p>A force applied to a body can:</p>
+<ol>
+<li class="fragment"><strong>Move</strong> a body at rest, or</li>
+<li class="fragment"><strong>Stop</strong> or slow down a moving body, or</li>
+<li class="fragment"><strong>Change the direction</strong> of a moving body, or</li>
+<li class="fragment"><strong>Distort</strong> the shape of a body (bend, dent, stretch), or</li>
+<li class="fragment"><strong>Change the size</strong> of the body (lengthen a spring, compress a sponge).</li>
+</ol>
+<svg viewBox="0 0 400 100" width="420" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <path d="M 30 50 q 15 -20 30 0 q 15 20 30 0 q 15 -20 30 0 q 15 20 30 0 q 15 -20 30 0 q 15 20 30 0" fill="none" stroke="#0b4f8c" stroke-width="3"/>
+  <line x1="30" y1="50" x2="10" y2="50" stroke="#a3310f" stroke-width="3" marker-end="url(#mArL)"/>
+  <line x1="210" y1="50" x2="260" y2="50" stroke="#a3310f" stroke-width="3" marker-end="url(#mArR)"/>
+  <defs>
+    <marker id="mArL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a3310f"/></marker>
+    <marker id="mArR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a3310f"/></marker>
+  </defs>
+  <text x="270" y="55" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">pulling a spring stretches it — a force changes its size</text>
+</svg>
+</section>
+
+<section class="slide level2">
+<h2>Two types of force</h2>
+<ol>
+<li><strong>Contact forces</strong> — the agent must <strong>touch</strong> the body to produce the effect.</li>
+<li><strong>Force fields</strong> (non-contact forces) — the agent can act <strong>at a distance</strong>, with no direct touch.</li>
+</ol>
+<p class="fragment"><em>Force fields can even act through a vacuum (the Sun's gravity reaches the Earth through empty space).</em></p>
+</section>
+
+<section class="slide level2">
+<h2>Examples side by side</h2>
+<table>
+<thead>
+<tr><th>Contact forces</th><th>Force fields (non-contact)</th></tr>
+</thead>
+<tbody>
+<tr><td>Push on a door</td><td>Gravitational force</td></tr>
+<tr><td>Pull on a rope</td><td>Electrical (electrostatic) force</td></tr>
+<tr><td>Tension in a bow string</td><td>Magnetic force</td></tr>
+<tr><td>Reaction from a table</td><td></td></tr>
+<tr><td>Friction between two surfaces</td><td></td></tr>
+</tbody>
+</table>
+<p class="fragment"><em>Reaction: when you press on the table, the table pushes back on your hand with an equal force. That is a contact force.</em></p>
+</section>
+
+<section class="slide level2">
+<h2>Common mistake — weight vs reaction</h2>
+<blockquote>
+<p>A book sits on a table. Two forces act on it.</p>
+<ul>
+<li>Its <strong>weight</strong> — the Earth pulling it down. This is a <strong>gravitational field</strong> force (no contact needed).</li>
+<li>The <strong>reaction</strong> — the table pushing it up. This is a <strong>contact</strong> force.</li>
+</ul>
+<p>Students often label the weight as a contact force. It is not: the Earth does not touch the book.</p>
+</blockquote>
+</section>
+
+<section class="slide level2">
+<h2>Worked example — Teacher's turn</h2>
+<blockquote>
+<p>Which of the following is <strong>NOT</strong> a consequence of a force field?</p>
+<p>A Weight &nbsp; B Surface tension &nbsp; C Gravitational pull<br/>
+D Magnetic force &nbsp; E Electrical force</p>
+<p><em>NSP Bk 1 p. 29 Q 11 (SSCE).</em></p>
+</blockquote>
+<div class="fragment">
+<p><strong>Reasoning.</strong> Weight = gravitational field. Gravitational pull = field. Magnetic = field. Electrical = field. Surface tension acts <em>between touching molecules</em> at a liquid surface — it is a <strong>contact</strong> effect.</p>
+<p><strong>Answer: B — Surface tension.</strong></p>
+</div>
+</section>
+
+<section class="slide level2">
+<h2 class="divider">Circular Motion</h2>
+</section>
+
+<section class="slide level2">
+<h2>Uniform circular motion</h2>
+<ul>
+<li>A body moves in a <strong>circle</strong> at <strong>constant speed</strong>.</li>
+<li>Its <strong>direction</strong> changes continuously, even though its <strong>speed</strong> does not.</li>
+</ul>
+<p class="fragment"><strong>Examples:</strong></p>
+<ul class="fragment">
+<li>A stone whirled on a string in a horizontal circle.</li>
+<li>A satellite circling the Earth.</li>
+<li>The Earth moving around the Sun; the Moon around the Earth.</li>
+<li>A car driving round a circular roundabout at a steady speed.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Why there must be an acceleration</h2>
+<svg viewBox="0 0 320 220" width="340" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <circle cx="160" cy="110" r="75" fill="none" stroke="#0b4f8c" stroke-width="2.5"/>
+  <circle cx="160" cy="110" r="4" fill="#222"/>
+  <text x="170" y="115" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">O</text>
+  <circle cx="235" cy="110" r="10" fill="#a3310f"/>
+  <line x1="235" y1="110" x2="235" y2="55" stroke="#0a7a30" stroke-width="3" marker-end="url(#cArUp)"/>
+  <text x="243" y="80" font-family="Helvetica" font-weight="800" font-size="12" fill="#0a7a30">v</text>
+  <line x1="235" y1="110" x2="170" y2="110" stroke="#a3310f" stroke-width="3" marker-end="url(#cArL)"/>
+  <text x="195" y="103" font-family="Helvetica" font-weight="800" font-size="12" fill="#a3310f">a (centripetal)</text>
+  <defs>
+    <marker id="cArUp" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0a7a30"/></marker>
+    <marker id="cArL" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a3310f"/></marker>
+  </defs>
+  <text x="160" y="210" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">velocity along tangent; acceleration toward centre</text>
+</svg>
+<ul class="fragment">
+<li>Velocity has both <em>size</em> and <em>direction</em>. Even with the speed unchanged, a change of <strong>direction</strong> is a change of velocity.</li>
+<li>Any change of velocity means there is an <strong>acceleration</strong>.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Centripetal acceleration</h2>
+<blockquote>
+<p><strong>Centripetal acceleration</strong> is the acceleration of a body in uniform circular motion. It is always directed <strong>toward the centre</strong> of the circle.</p>
+</blockquote>
+<p>Its magnitude is</p>
+<p>\[ a = \dfrac{v^{2}}{r} \]</p>
+<ul>
+<li>\(v\) = constant speed along the circle (m s<sup>−1</sup>),</li>
+<li>\(r\) = radius of the circle (m).</li>
+<li>Unit of \(a\): m s<sup>−2</sup>.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Centripetal force</h2>
+<blockquote>
+<p><strong>Centripetal force</strong> is the inward force required to keep a body moving at constant speed along a circular path. It is directed toward the centre of the circle.</p>
+</blockquote>
+<p>From Newton's 2nd law (\(F = ma\)):</p>
+<p>\[ F = \dfrac{m v^{2}}{r} \]</p>
+<ul>
+<li>\(m\) = mass of the body (kg); gives \(F\) in newtons (N).</li>
+<li>Something real has to <strong>supply</strong> this inward force: the tension in a string, friction between tyre and road, gravity on a satellite.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>What happens when the inward force is removed?</h2>
+<ul>
+<li>A stone whirled on a string flies off along the <strong>tangent</strong> the instant the string is cut.</li>
+<li class="fragment">Mud on a spinning car tyre flies off the tyre along the tangent once the speed is high enough that the stickiness can no longer hold it.</li>
+</ul>
+<svg viewBox="0 0 360 200" width="380" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <circle cx="140" cy="100" r="60" fill="none" stroke="#0b4f8c" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <circle cx="200" cy="100" r="9" fill="#a3310f"/>
+  <line x1="200" y1="100" x2="310" y2="50" stroke="#0a7a30" stroke-width="3" marker-end="url(#tTan)"/>
+  <defs><marker id="tTan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0a7a30"/></marker></defs>
+  <text x="250" y="45" font-family="Helvetica" font-weight="800" font-size="12" fill="#0a7a30">flies off along tangent</text>
+  <text x="140" y="190" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">circular path (string cut here)</text>
+</svg>
+</section>
+
+<section class="slide level2">
+<h2>Applications — car on a curve, and banking</h2>
+<ul>
+<li>A car driving round a bend needs an inward (centripetal) force. <strong>Friction</strong> between the tyres and the road provides it.</li>
+<li class="fragment">On <strong>wet tarmac</strong>, friction is not enough — the car <strong>skids outwards</strong> along a tangent.</li>
+<li class="fragment"><strong>Banking</strong> the road (tilting it inwards) means part of the normal reaction points toward the centre of the bend. The road supplies the centripetal force even when friction is low.</li>
+</ul>
+<svg viewBox="0 0 360 150" width="380" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <polygon points="40,120 320,120 320,90 40,105" fill="#eef3ff" stroke="#0b4f8c" stroke-width="2"/>
+  <rect x="160" y="78" width="60" height="18" rx="4" fill="#a3310f" transform="rotate(-3 190 87)"/>
+  <line x1="190" y1="87" x2="130" y2="87" stroke="#0a7a30" stroke-width="3" marker-end="url(#bA)"/>
+  <defs><marker id="bA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0a7a30"/></marker></defs>
+  <text x="80" y="80" font-family="Helvetica" font-weight="800" font-size="12" fill="#0a7a30">centripetal force</text>
+  <text x="180" y="140" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">banked road (tilted toward centre of bend)</text>
+</svg>
+</section>
+
+<section class="slide level2">
+<h2>Centrifugal force</h2>
+<ul>
+<li>By Newton's <strong>third law</strong>, every action has an equal and opposite reaction.</li>
+<li class="fragment">The string pulls the stone <strong>inward</strong> (centripetal). The stone pulls the string <strong>outward</strong> (centrifugal).</li>
+<li class="fragment"><strong>Centrifugal force</strong> is the equal and opposite reaction to the centripetal force.</li>
+</ul>
+<blockquote class="fragment">
+<p><em>Applications:</em> a <strong>centrifuge</strong> uses centrifugal effect to separate heavier blood cells from lighter plasma; a spin-dryer uses it to throw water out of wet clothes.</p>
+</blockquote>
+</section>
+
+<section class="slide level2">
+<h2>Worked example — Teacher's turn</h2>
+<blockquote>
+<p>A mass of <strong>10 kg</strong> is moving in a circular path of radius <strong>2 m</strong> with a uniform speed of <strong>50 m s<sup>−1</sup></strong>. Find (a) the centripetal acceleration, (b) the centripetal force.</p>
+<p><em>NSP Bk 1 p. 27 Example 2.5.</em></p>
+</blockquote>
+<div class="fragment">
+<p><strong>Solution.</strong></p>
+<p>(a) \( a = \dfrac{v^{2}}{r} = \dfrac{50^{2}}{2} = \dfrac{2500}{2} = \mathbf{1250~m~s^{-2}} \) (toward centre).</p>
+<p>(b) \( F = ma = 10 \times 1250 = \mathbf{12\,500~N} \) (toward centre).</p>
+</div>
+</section>
+
+<section class="slide level2">
+<h2 class="task">Class task</h2>
+<p>Copy each question into your exercise book and answer there.</p>
+<ol>
+<li><strong>Define</strong> force. Distinguish between a <strong>contact force</strong> and a <strong>force field</strong>, giving one example of each.</li>
+<li>A stone of mass <strong>0.5 kg</strong> is whirled on a string in a horizontal circle of radius <strong>1.5 m</strong> at a constant speed of <strong>6 m s<sup>−1</sup></strong>. Find the centripetal force in the string.</li>
+</ol>
+<p class="fragment"><strong>Expected answers (for the teacher to reveal):</strong></p>
+<ul class="fragment">
+<li>1 — Force is an agent that changes or tends to change the rest or uniform motion of a body. Contact: push/pull (touch needed). Field: gravitational/magnetic (acts at a distance).</li>
+<li>2 — \( F = \dfrac{mv^{2}}{r} = \dfrac{0.5 \times 36}{1.5} = \mathbf{12~N} \).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2 class="homework">Homework</h2>
+<p>Copy each question and answer in your exercise book. Submit next lesson.</p>
+<ol>
+<li>What causes motion? Distinguish between <strong>contact force</strong> and <strong>force field</strong>. Give <strong>two examples</strong> of each. <em>(NSP Bk 1 p. 29 Q 7.)</em></li>
+<li>Which of the following is <strong>not</strong> a consequence of a force field? A Weight &nbsp; B Surface tension &nbsp; C Gravitational pull &nbsp; D Magnetic force &nbsp; E Electrical force. <em>(NSP Bk 1 p. 29 Q 11.)</em></li>
+<li>A stone tied to a string is made to revolve in a horizontal circle of radius <strong>4 m</strong> with an angular speed of <strong>2 rad s<sup>−1</sup></strong>. With what tangential velocity will the stone move off the circle if the string cuts? A 16 m s<sup>−1</sup> &nbsp; B 8 m s<sup>−1</sup> &nbsp; C 6 m s<sup>−1</sup> &nbsp; D 2 m s<sup>−1</sup> &nbsp; E 0.5 m s<sup>−1</sup>. <em>(NSP Bk 1 p. 29 Q 10.)</em></li>
+<li>A piece of stone attached to one end of a string is whirled round in a horizontal circle. When the string is suddenly cut, the stone will — (a) move towards the centre of the circle; (b) stop moving immediately; (c) move along a circular path of smaller radius; (d) fly off tangential to the circular path; (e) acquire greater centripetal force. <em>(NSP Bk 1 p. 29 Q 22.)</em></li>
+<li>A car of mass <strong>800 kg</strong> rounds a bend of radius <strong>50 m</strong> at a steady speed of <strong>10 m s<sup>−1</sup></strong>. Calculate the centripetal force needed. <em>(Adapted from the circular-motion worked examples, NSP Bk 1 pp. 24–27.)</em></li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Key takeaways</h2>
+<ul>
+<li>A <strong>force</strong> starts, stops, redirects, distorts or re-sizes a body. SI unit: newton.</li>
+<li>Two kinds: <strong>contact</strong> (push, pull, tension, reaction, friction) and <strong>force fields</strong> (gravitational, electrical, magnetic — act at a distance).</li>
+<li>In <strong>uniform circular motion</strong>, speed is constant but direction (and so velocity) changes — there must be a <strong>centripetal acceleration</strong> \(a = v^{2}/r\) toward the centre.</li>
+<li>The inward force producing this acceleration is the <strong>centripetal force</strong> \(F = mv^{2}/r\). Its Newton's-3rd-law reaction is the <strong>centrifugal force</strong>.</li>
+<li>Friction supplies the centripetal force on a car bend; banking the road helps when friction is low.</li>
+</ul>
+</section>
+
+  </div></div>
+  <script src="./revealjs/dist/reveal.js"></script>
+  <script src="./revealjs/plugin/notes/notes.js"></script>
+  <script src="./revealjs/plugin/search/search.js"></script>
+  <script src="./revealjs/plugin/zoom/zoom.js"></script>
+  <script src="./revealjs/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true, progress: true, slideNumber: true, hash: true,
+      center: false, touch: true, fragments: true,
+      width: 1280, height: 900, margin: 4.0e-2, minScale: 0.2, maxScale: 2,
+      mathjax3: {
+        mathjax: './mathjax/es5/tex-mml-chtml.js',
+        tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+      },
+      plugins: [ RevealMath.MathJax3, RevealNotes, RevealSearch, RevealZoom ]
+    });
+  </script>
+</body>
+</html>

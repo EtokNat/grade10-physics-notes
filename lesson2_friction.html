@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Greenoak International School · Grade 10 Physics">
+  <title>Motion II — Lesson 2 · Coefficient of Friction</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./revealjs/dist/reset.css">
+  <link rel="stylesheet" href="./revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="./revealjs/dist/theme/white.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+</head>
+<body>
+  <div class="reveal"><div class="slides">
+
+<section id="title-slide" class="title-slide">
+  <h1 class="title">Motion II — Lesson 2</h1>
+  <p class="subtitle">Coefficient of Friction &amp; Experimental Determination</p>
+  <p class="author">Greenoak International School · Grade 10 Physics · Week 8</p>
+</section>
+
+<section class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li><strong>State</strong> the relation \(F = \mu R\) and <strong>define</strong> the coefficient of friction \(\mu\).</li>
+<li><strong>Explain</strong> why \(\mu\) has no unit.</li>
+<li><strong>Describe</strong> an experiment to determine the coefficient of static friction between two surfaces using a pulley and a scale pan.</li>
+<li><strong>Interpret</strong> a graph of limiting friction \(F\) against normal reaction \(R\): the slope gives \(\mu\).</li>
+<li><strong>Solve</strong> numerical problems involving \(F\), \(R\) and \(\mu\).</li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Prior knowledge check (last lesson)</h2>
+<ul>
+<li>Friction opposes relative motion.</li>
+<li>Static friction self-adjusts up to a maximum — the <strong>limiting friction</strong>.</li>
+<li>Kinetic friction (sliding) is <strong>less</strong> than limiting static friction.</li>
+<li>Law 5: limiting friction is <strong>proportional</strong> to the normal reaction \(R\).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>From proportionality to equation</h2>
+<p>Law 5 says: \(F \propto R\).</p>
+<ul>
+<li class="fragment">Any proportionality can be written as an equation with a <strong>constant</strong>:</li>
+</ul>
+<div class="fragment" style="background:#eef3fa;border:2px solid #0b4f8c;border-radius:10px;padding:0.4em 0.9em;margin:0.3em auto;max-width:80%;text-align:center;font-size:1.3em">
+\( \displaystyle F = \mu R \)
+</div>
+<ul>
+<li class="fragment">\(F\) = limiting frictional force (newtons)</li>
+<li class="fragment">\(R\) = normal reaction (newtons) — on a level surface this equals the weight pressing down</li>
+<li class="fragment">\(\mu\) = <strong>coefficient of friction</strong> between the two surfaces</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>What is the coefficient of friction?</h2>
+<blockquote>
+<p>The <strong>coefficient of friction</strong> between two surfaces is the ratio of the limiting frictional force to the normal reaction between the surfaces.</p>
+</blockquote>
+<p style="text-align:center;font-size:1.25em">\( \displaystyle \mu = \dfrac{F}{R} \)</p>
+<ul>
+<li class="fragment">It is a <strong>ratio of two forces</strong> (N ÷ N), so it has <strong>no unit</strong>.</li>
+<li class="fragment">It is a property of the <strong>pair of surfaces</strong> — not of the block, not of the bench alone.</li>
+<li class="fragment">Rough surfaces → large \(\mu\) (close to 1). Smooth, lubricated surfaces → small \(\mu\) (much less than 1).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Typical values (for a feel)</h2>
+<table style="margin:0.4em auto;border-collapse:collapse;font-size:0.95em">
+<thead><tr style="background:#eef3fa"><th style="padding:0.3em 0.9em;border:1px solid #9bb3d4">Surfaces in contact</th><th style="padding:0.3em 0.9em;border:1px solid #9bb3d4">Approximate \(\mu\)</th></tr></thead>
+<tbody>
+<tr><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4">Rubber on dry tarmac</td><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4;text-align:center">≈ 1.0</td></tr>
+<tr><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4">Wood on wood</td><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4;text-align:center">≈ 0.3 – 0.5</td></tr>
+<tr><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4">Steel on steel (dry)</td><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4;text-align:center">≈ 0.6</td></tr>
+<tr><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4">Steel on steel (oiled)</td><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4;text-align:center">≈ 0.05</td></tr>
+<tr><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4">Ice on ice</td><td style="padding:0.25em 0.9em;border:1px solid #9bb3d4;text-align:center">≈ 0.03</td></tr>
+</tbody>
+</table>
+<p style="text-align:center"><em>Smaller \(\mu\) → easier to slide.</em></p>
+</section>
+
+<section class="slide level2">
+<h2 class="divider">Measuring \(\mu\) in the laboratory</h2>
+</section>
+
+<section class="slide level2">
+<h2>Experiment — apparatus</h2>
+<p>To measure the coefficient of <strong>static</strong> friction between a wooden block and a bench, we use a block on the bench connected via a <strong>string over a pulley</strong> to a <strong>scale pan</strong>.</p>
+<svg viewBox="0 0 560 240" width="640" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <!-- bench top -->
+  <line x1="20" y1="130" x2="440" y2="130" stroke="#4a4a52" stroke-width="3"/>
+  <!-- hatching below bench -->
+  <path d="M 20 130 L 30 145 M 50 130 L 60 145 M 80 130 L 90 145 M 110 130 L 120 145 M 140 130 L 150 145 M 170 130 L 180 145 M 200 130 L 210 145 M 230 130 L 240 145 M 260 130 L 270 145 M 290 130 L 300 145 M 320 130 L 330 145 M 350 130 L 360 145 M 380 130 L 390 145 M 410 130 L 420 145" stroke="#4a4a52" stroke-width="1.5"/>
+  <!-- bench edge (vertical drop at right) -->
+  <line x1="440" y1="130" x2="440" y2="200" stroke="#4a4a52" stroke-width="3"/>
+  <!-- block on bench -->
+  <rect x="80" y="85" width="110" height="45" fill="#b88a4a" stroke="#5a3a0a" stroke-width="2"/>
+  <text x="135" y="113" text-anchor="middle" font-size="16" font-weight="700" fill="#2a2a32">block</text>
+  <!-- weight on block -->
+  <rect x="100" y="60" width="70" height="25" fill="#888" stroke="#333" stroke-width="2"/>
+  <text x="135" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">added weight</text>
+  <!-- string horizontal -->
+  <line x1="190" y1="100" x2="440" y2="100" stroke="#333" stroke-width="2"/>
+  <!-- pulley -->
+  <circle cx="450" cy="100" r="12" fill="#eee" stroke="#333" stroke-width="2"/>
+  <circle cx="450" cy="100" r="3" fill="#333"/>
+  <!-- string down -->
+  <line x1="462" y1="100" x2="462" y2="180" stroke="#333" stroke-width="2"/>
+  <!-- scale pan -->
+  <line x1="440" y1="180" x2="484" y2="180" stroke="#333" stroke-width="3"/>
+  <line x1="440" y1="180" x2="450" y2="195" stroke="#333" stroke-width="2"/>
+  <line x1="484" y1="180" x2="474" y2="195" stroke="#333" stroke-width="2"/>
+  <line x1="450" y1="195" x2="474" y2="195" stroke="#333" stroke-width="2"/>
+  <text x="462" y="218" text-anchor="middle" font-size="13" font-weight="700" fill="#2a2a32">scale pan</text>
+  <!-- label pulley -->
+  <text x="498" y="90" font-size="13" font-weight="700" fill="#2a2a32">pulley</text>
+  <!-- label string -->
+  <text x="300" y="92" text-anchor="middle" font-size="13" font-weight="700" fill="#2a2a32">string</text>
+</svg>
+<ul>
+<li>Wooden block (known mass).</li>
+<li>String over a frictionless pulley at the edge of the bench.</li>
+<li>Scale pan (known mass) hanging from the other end.</li>
+<li>A set of slotted weights to load the pan (and also the block).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Experiment — procedure</h2>
+<ol>
+<li class="fragment">Weigh the block; call its weight (plus any load on top) \(W\). Since the bench is level, the <strong>normal reaction</strong> is \(R = W\).</li>
+<li class="fragment">Add small weights to the scale pan, one at a time.</li>
+<li class="fragment">At some total pan weight, the block <strong>just starts to slide</strong>. That total pan weight is the <strong>limiting friction</strong> \(F\).</li>
+<li class="fragment">Record the pair \((R, F)\).</li>
+<li class="fragment">Add a known weight on top of the block. The normal reaction is now the new total weight of (block + load). Repeat steps 2–4.</li>
+<li class="fragment">Record at least 5 or 6 pairs \((R, F)\) over a wide range of loads.</li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Experiment — the graph</h2>
+<p>Plot \(F\) (y-axis) against \(R\) (x-axis).</p>
+<svg viewBox="0 0 440 260" width="520" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <!-- axes -->
+  <line x1="60" y1="220" x2="420" y2="220" stroke="#333" stroke-width="2" marker-end="url(#frA3)"/>
+  <line x1="60" y1="220" x2="60" y2="20" stroke="#333" stroke-width="2" marker-end="url(#frA4)"/>
+  <text x="420" y="240" text-anchor="end" font-size="15" font-weight="700" fill="#2a2a32">Normal reaction R / N</text>
+  <text x="40" y="20" text-anchor="end" font-size="15" font-weight="700" fill="#2a2a32">Limiting F / N</text>
+  <!-- data points -->
+  <circle cx="110" cy="190" r="4" fill="#0b4f8c"/>
+  <circle cx="160" cy="160" r="4" fill="#0b4f8c"/>
+  <circle cx="220" cy="120" r="4" fill="#0b4f8c"/>
+  <circle cx="280" cy="85" r="4" fill="#0b4f8c"/>
+  <circle cx="340" cy="55" r="4" fill="#0b4f8c"/>
+  <!-- best fit straight line through origin -->
+  <line x1="60" y1="220" x2="400" y2="30" stroke="#a3310f" stroke-width="2"/>
+  <!-- slope triangle -->
+  <line x1="200" y1="135" x2="300" y2="135" stroke="#0b4f8c" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <line x1="300" y1="135" x2="300" y2="80" stroke="#0b4f8c" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="250" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#0b4f8c">ΔR</text>
+  <text x="312" y="110" font-size="12" font-weight="700" fill="#0b4f8c">ΔF</text>
+  <!-- slope label -->
+  <text x="330" y="180" font-size="15" font-weight="700" fill="#a3310f">slope = μ</text>
+  <defs>
+    <marker id="frA3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+    <marker id="frA4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+  </defs>
+</svg>
+<ul>
+<li>The graph is a <strong>straight line through the origin</strong> — this is the experimental proof of Law 5.</li>
+<li>The <strong>slope</strong> of the line is \( \displaystyle \mu = \dfrac{\Delta F}{\Delta R}\).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Why the pulley + pan method works</h2>
+<ul>
+<li>The <strong>hanging pan</strong> pulls the string with a force equal to its own weight (and its load).</li>
+<li>The pulley <strong>redirects</strong> that pull to act <strong>horizontally</strong> on the block.</li>
+<li>So the horizontal pull on the block is simply <strong>(weight of pan + load on pan)</strong>.</li>
+<li>When the block <em>just</em> slides, that horizontal pull equals the <strong>limiting friction</strong> \(F\).</li>
+</ul>
+<p class="fragment"><strong>Sources of error to mention to students:</strong> pulley friction (never zero), slight jerk when adding weights, uneven bench surface, dust on contact area.</p>
+</section>
+
+<section class="slide level2">
+<h2>Worked example — NSP 2.3</h2>
+<div style="background:#eef3fa;border:1px solid #9bb3d4;border-radius:8px;padding:0.5em 0.9em;margin:0.3em 0">
+<p><strong>A block of wood of weight 4 N rests on a horizontal table. When a horizontal force of 2.5 N is applied, the block just begins to slide.</strong></p>
+<p>(a) What is the coefficient of static friction between the block and the table?<br>
+(b) If a horizontal force of only 2 N were applied instead, what is the frictional force on the block?</p>
+</div>
+<p class="fragment"><strong>Solution.</strong></p>
+<ul class="fragment">
+<li>The surface is level, so normal reaction \( R = W = 4\text{ N}\).</li>
+<li>Limiting friction \(F = 2.5\text{ N}\) (the pull that <em>just</em> starts sliding).</li>
+<li>(a) \( \displaystyle \mu = \dfrac{F}{R} = \dfrac{2.5}{4} = \mathbf{0.625} \) &nbsp;(no unit).</li>
+<li>(b) 2 N is <strong>less</strong> than the 2.5 N limit. The block does not move, so friction simply matches the pull: \(\mathbf{F = 2\text{ N}}\).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Common slip to avoid</h2>
+<blockquote>
+<p>\( F = \mu R \) gives the <strong>limiting</strong> friction — the <em>maximum</em> value static friction can reach.</p>
+</blockquote>
+<ul>
+<li class="fragment">If the applied pull is <strong>less than</strong> \(\mu R\), the actual friction equals the <strong>pull</strong>, not \(\mu R\).</li>
+<li class="fragment">Only use \(F = \mu R\) when the question says "just about to slide", "on the point of slipping", "maximum friction", or the body is already sliding.</li>
+<li class="fragment">In NSP 2.3(b), the pull (2 N) is below the limit (2.5 N) — so the answer is 2 N, not 2.5 N.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2 class="task">Class task</h2>
+<p>Copy each question into your exercise book and answer there.</p>
+<ol>
+<li><strong>Define</strong> the coefficient of friction and state <strong>why it has no unit</strong>.</li>
+<li>A block of mass <strong>2 kg</strong> rests on a horizontal bench. The coefficient of static friction between the block and the bench is <strong>0.4</strong>. Taking \(g = 10\text{ m s}^{-2}\), find the <strong>minimum</strong> horizontal force needed to start the block moving.</li>
+</ol>
+<p class="fragment"><strong>Expected answers:</strong></p>
+<ul class="fragment">
+<li>1 — \(\mu\) is the ratio of limiting friction to the normal reaction (\(\mu = F/R\)). Because it is the ratio of two forces (both in newtons), the units cancel, leaving no unit.</li>
+<li>2 — Weight \(W = mg = 2 \times 10 = 20\text{ N}\). On a level bench, \(R = W = 20\text{ N}\). Minimum force to start sliding = limiting friction \( = \mu R = 0.4 \times 20 = \mathbf{8\text{ N}}\).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2 class="homework">Homework</h2>
+<p>Copy each question and answer in your exercise book. Submit next lesson. Take \(g = 10\text{ m s}^{-2}\).</p>
+<ol>
+<li>Define coefficient of friction. A block of mass <strong>5 kg</strong> rests on a horizontal surface. The coefficient of static friction between the block and the surface is <strong>0.3</strong>. Calculate the force required to just move the block. <em>(Adapted from NSP Bk 1 Example 2.3, p. 22.)</em></li>
+<li>A horizontal force of <strong>10 N</strong> is applied to a block of weight <strong>25 N</strong> on a horizontal table, and the block is on the point of slipping. Find the coefficient of static friction between the block and the table. <em>(Adapted from NSP Bk 1 pp. 22–23.)</em></li>
+<li>Describe, with the aid of a labelled diagram, an experiment to determine the coefficient of static friction between a wooden block and a bench. State two precautions you would take. <em>(NSP Bk 1 p. 30 Q 25.)</em></li>
+<li>A graph of limiting frictional force against normal reaction is plotted for a block on a bench. What does the graph look like? What does its slope represent? <em>(Adapted from NSP Bk 1 p. 23 Fig. 2.21.)</em></li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Key takeaways</h2>
+<ul>
+<li>Limiting friction: \( F = \mu R \).</li>
+<li>Coefficient of friction: \( \mu = F/R \) — a <strong>ratio</strong>, so no unit.</li>
+<li>Measured in the lab with a <strong>block + string + pulley + scale pan</strong>, varying the load.</li>
+<li>Graph of \(F\) against \(R\) is a <strong>straight line through the origin</strong>; slope = \(\mu\).</li>
+<li>Only use \(F = \mu R\) at (or beyond) the point of slipping — below that, friction equals the applied force.</li>
+</ul>
+</section>
+
+  </div></div>
+  <script src="./revealjs/dist/reveal.js"></script>
+  <script src="./revealjs/plugin/notes/notes.js"></script>
+  <script src="./revealjs/plugin/search/search.js"></script>
+  <script src="./revealjs/plugin/zoom/zoom.js"></script>
+  <script src="./revealjs/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true, progress: true, slideNumber: true, hash: true,
+      center: false, touch: true, fragments: true,
+      width: 1280, height: 900, margin: 4.0e-2, minScale: 0.2, maxScale: 2,
+      mathjax3: {
+        mathjax: './mathjax/es5/tex-mml-chtml.js',
+        tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+      },
+      plugins: [ RevealMath.MathJax3, RevealNotes, RevealSearch, RevealZoom ]
+    });
+  </script>
+</body>
+</html>

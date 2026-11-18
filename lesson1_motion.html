@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Greenoak International School · Grade 10 Physics">
+  <title>Motion I — Lesson 1 · Types of Motion &amp; Relative Motion</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./revealjs/dist/reset.css">
+  <link rel="stylesheet" href="./revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="./revealjs/dist/theme/white.css" id="theme">
+  <link rel="stylesheet" href="slides.css"/>
+</head>
+<body>
+  <div class="reveal"><div class="slides">
+
+<section id="title-slide" class="title-slide">
+  <h1 class="title">Motion I — Lesson 1</h1>
+  <p class="subtitle">Types of Motion &amp; Relative Motion</p>
+  <p class="author">Greenoak International School · Grade 10 Physics · Week 7</p>
+</section>
+
+<section class="slide level2">
+<h2>Learning objectives</h2>
+<p>By the end of this lesson, students will be able to:</p>
+<ol>
+<li><strong>Define</strong> motion in terms of change of position.</li>
+<li><strong>List and describe</strong> the four main types of motion: random, translational, rotational, oscillatory.</li>
+<li><strong>Give</strong> everyday examples of each type and recognise when two types combine in one motion.</li>
+<li><strong>Define</strong> relative motion and identify the frame (point) of reference.</li>
+<li><strong>Solve</strong> simple problems on the speed of a body relative to a second body.</li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Prior knowledge check</h2>
+<ul>
+<li>A body's <strong>position</strong> is located from a reference point using a coordinate system (Week 4).</li>
+<li><strong>Distance</strong> has magnitude only; <strong>displacement</strong> has magnitude <em>and</em> direction.</li>
+<li>Units of distance: metre (m), kilometre (km); units of speed: m s<sup>−1</sup>, km h<sup>−1</sup>.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>What is motion?</h2>
+<blockquote>
+<p><strong>Motion</strong> is a change in the position of a body with time.</p>
+</blockquote>
+<ul>
+<li class="fragment"><strong>Kinematics</strong> — the description of <em>how</em> a body moves.</li>
+<li class="fragment"><strong>Dynamics</strong> — the study of <em>why</em> a body moves (the forces that cause motion).</li>
+<li class="fragment">In this chapter we start with kinematics, then move to dynamics (force, friction).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Four types of motion</h2>
+<ol>
+<li><strong>Random</strong> motion</li>
+<li><strong>Translational</strong> motion</li>
+<li><strong>Rotational</strong> motion</li>
+<li><strong>Oscillatory</strong> (or vibratory) motion</li>
+</ol>
+<p class="fragment">A real body often shows <strong>two</strong> types at once, e.g. a spinning ping-pong ball flying through the air (translation + rotation).</p>
+</section>
+
+<section class="slide level2">
+<h2>1. Random motion</h2>
+<ul>
+<li>Objects move <strong>irregularly, at random, with no preferred direction</strong>.</li>
+<li>Caused by many collisions between particles.</li>
+</ul>
+<svg viewBox="0 0 400 180" width="420" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <polyline points="40,150 85,70 120,130 170,45 215,120 255,55 295,135 335,80 370,110" fill="none" stroke="#0b4f8c" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="40" cy="150" r="5" fill="#a3310f"/>
+  <circle cx="370" cy="110" r="5" fill="#a3310f"/>
+  <text x="200" y="175" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">Irregular zig-zag path of a smoke particle</text>
+</svg>
+<p class="fragment"><strong>Examples:</strong> <strong>Brownian motion</strong> of smoke in air or pollen in water; gas particles in a closed container; a honey-bee buzzing around a flower bed.</p>
+</section>
+
+<section class="slide level2">
+<h2>2. Translational motion</h2>
+<ul>
+<li>A <strong>rigid</strong> body moves from one point in space to another <strong>without rotating</strong>.</li>
+<li>Every part of the body follows the <strong>same path</strong>.</li>
+</ul>
+<svg viewBox="0 0 420 140" width="440" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <line x1="20" y1="100" x2="400" y2="100" stroke="#333" stroke-width="2"/>
+  <g transform="translate(60,70)">
+    <rect x="0" y="0" width="60" height="22" rx="4" fill="#0b4f8c"/>
+    <circle cx="12" cy="24" r="6" fill="#222"/>
+    <circle cx="48" cy="24" r="6" fill="#222"/>
+  </g>
+  <g transform="translate(280,70)" opacity="0.55">
+    <rect x="0" y="0" width="60" height="22" rx="4" fill="#0b4f8c"/>
+    <circle cx="12" cy="24" r="6" fill="#222"/>
+    <circle cx="48" cy="24" r="6" fill="#222"/>
+  </g>
+  <path d="M 130 80 L 275 80" stroke="#a3310f" stroke-width="3" marker-end="url(#arr1)"/>
+  <defs><marker id="arr1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a3310f"/></marker></defs>
+  <text x="90" y="120" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">Enugu</text>
+  <text x="310" y="120" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">Lagos</text>
+</svg>
+<p class="fragment"><strong>Examples:</strong> a diver falling straight down; a car from Enugu to Lagos; a train from Port Harcourt to Aba on a straight track.</p>
+<p class="fragment"><em>Every point in the body stays fixed relative to every other point as the body moves.</em></p>
+</section>
+
+<section class="slide level2">
+<h2>3. Rotational motion</h2>
+<ul>
+<li>All points in the body <strong>move in concentric circles</strong>.</li>
+<li>The centres of these circles lie on a line — the <strong>axis of rotation</strong>.</li>
+</ul>
+<svg viewBox="0 0 320 180" width="340" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <circle cx="160" cy="90" r="65" fill="#eef3ff" stroke="#0b4f8c" stroke-width="3"/>
+  <circle cx="160" cy="90" r="4" fill="#222"/>
+  <line x1="160" y1="90" x2="160" y2="25" stroke="#a3310f" stroke-width="2.5" stroke-dasharray="4 3"/>
+  <circle cx="160" cy="25" r="5" fill="#a3310f"/>
+  <path d="M 200 50 A 50 50 0 0 1 210 110" fill="none" stroke="#0b4f8c" stroke-width="2" marker-end="url(#arr2)"/>
+  <defs><marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0b4f8c"/></marker></defs>
+  <text x="160" y="18" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">point P on rim</text>
+  <text x="170" y="100" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">O (centre)</text>
+  <text x="160" y="170" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">Every point moves in a circle round axis O</text>
+</svg>
+<p class="fragment"><strong>Examples:</strong> the Earth on its own axis; a spinning cricket ball or football; the blades of an electric fan; the wheels of a car (relative to the car body).</p>
+</section>
+
+<section class="slide level2">
+<h2>4. Oscillatory (vibratory) motion</h2>
+<ul>
+<li>A body moves <strong>to and fro</strong> about a fixed point, reversing direction regularly.</li>
+<li>The motion is <strong>periodic</strong> — it repeats itself in equal time intervals.</li>
+</ul>
+<svg viewBox="0 0 320 180" width="340" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <rect x="80" y="18" width="160" height="10" fill="#444"/>
+  <line x1="160" y1="28" x2="160" y2="130" stroke="#0b4f8c" stroke-width="2.5"/>
+  <circle cx="160" cy="138" r="15" fill="#0b4f8c"/>
+  <path d="M 160 28 L 100 110" stroke="#aaa" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="100" cy="118" r="12" fill="#eef3ff" stroke="#0b4f8c" stroke-width="2"/>
+  <path d="M 160 28 L 220 110" stroke="#aaa" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="220" cy="118" r="12" fill="#eef3ff" stroke="#0b4f8c" stroke-width="2"/>
+  <path d="M 110 150 Q 160 170 210 150" fill="none" stroke="#a3310f" stroke-width="2" marker-end="url(#arr3)"/>
+  <defs><marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a3310f"/></marker></defs>
+  <text x="160" y="175" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">Pendulum bob swings to and fro</text>
+</svg>
+<p class="fragment"><strong>Examples:</strong> the bob of a <strong>simple pendulum</strong>; a mass on a <strong>vibrating spring</strong>; the strings of a plucked guitar; the prongs of a struck tuning fork; a diving board after the diver jumps.</p>
+</section>
+
+<section class="slide level2">
+<h2>Combinations of motion</h2>
+<p>A single moving body can show <strong>two types of motion at once</strong>.</p>
+<ul>
+<li class="fragment">A <strong>ping-pong ball</strong> hit from one player to another — translation (through the air) + rotation (spinning about an axis).</li>
+<li class="fragment">A <strong>diver</strong> performing a somersault — translation (falling) + rotation (flipping about his waist).</li>
+<li class="fragment">A <strong>rolling wheel</strong> on a road — translation (whole wheel moves forward) + rotation (about its axle).</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Common mistake — mixing up the four types</h2>
+<blockquote>
+<p>Students often confuse <strong>rotational</strong> with <strong>oscillatory</strong> motion because both involve a fixed point.</p>
+<p>Use the mnemonic:</p>
+<ul>
+<li><strong>Rot</strong>ational = goes all the way <strong>round</strong> the axis (fan blade, wheel).</li>
+<li><strong>Osc</strong>illatory = swings <strong>to and fro</strong> through a fixed point (pendulum, string).</li>
+</ul>
+</blockquote>
+</section>
+
+<section class="slide level2">
+<h2>Relative motion — why we need a reference</h2>
+<ul>
+<li>Motion is a <strong>change of position</strong> — but position measured from <em>where</em>?</li>
+<li>We must choose a <strong>point</strong> (or <strong>frame</strong>) of reference assumed to be at rest.</li>
+<li>Every measurement of motion is <strong>relative</strong> to that chosen reference.</li>
+</ul>
+<blockquote class="fragment">
+<p><strong>Relative motion</strong> of a body A with respect to a body B is the motion of A as observed from B. B is the frame of reference.</p>
+</blockquote>
+</section>
+
+<section class="slide level2">
+<h2>Relative motion — the train &amp; platform</h2>
+<ul>
+<li>You are sitting in a train that moves past a railway platform where your friend is standing.</li>
+<li class="fragment">Relative to <strong>the ground</strong>, you are <strong>moving</strong>.</li>
+<li class="fragment">Relative to <strong>the train seat</strong>, you are <strong>at rest</strong>.</li>
+<li class="fragment">Relative to <strong>your friend</strong> (standing on the platform), you and your friend are <strong>separating</strong> — there is relative motion between you.</li>
+</ul>
+<p class="fragment"><em>Both statements are correct — they use different frames of reference.</em></p>
+</section>
+
+<section class="slide level2">
+<h2>Relative motion — man walking on a bus</h2>
+<p>A bus moves along a straight road at <strong>100 km h<sup>−1</sup></strong>. A man inside walks at <strong>5 km h<sup>−1</sup></strong> relative to the bus.</p>
+<ul>
+<li class="fragment">If he walks <strong>toward the driver</strong> (same direction as the bus):<br/>
+speed relative to the ground = <strong>100 + 5 = 105 km h<sup>−1</sup></strong>.</li>
+<li class="fragment">If he walks <strong>back to his seat</strong> (opposite direction):<br/>
+speed relative to the ground = <strong>100 − 5 = 95 km h<sup>−1</sup></strong>.</li>
+<li class="fragment">Relative to <strong>the bus</strong>, his speed is <strong>5 km h<sup>−1</sup></strong> in both cases — only the direction changes.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Relative motion — moving trees?</h2>
+<ul>
+<li>A pupil in a school bus looks at the floor of the bus. The bus appears to be <strong>stationary</strong>.<br/>
+<em>Same speed as the pupil → no relative motion.</em></li>
+<li class="fragment">The pupil now looks out of the window. The trees appear to <strong>move backwards</strong>.<br/>
+<em>Trees are at rest; the pupil is moving forward. Relative to the pupil, the trees move the other way.</em></li>
+<li class="fragment">The illusion of moving trees is caused by the <strong>relative motion</strong> between the pupil and the stationary trees.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2>Describing motion — using graphs</h2>
+<ul>
+<li>So far we have described motion in words: "the car moved from Enugu to Lagos", "the pupil saw trees moving backward".</li>
+<li class="fragment">To describe motion <strong>precisely</strong>, we draw <strong>graphs</strong> of how position (or velocity) changes with time.</li>
+<li class="fragment">Two graphs are used all through this topic:</li>
+</ul>
+<ol class="fragment">
+<li>The <strong>distance–time</strong> (or displacement–time) graph.</li>
+<li>The <strong>velocity–time</strong> graph.</li>
+</ol>
+<p class="fragment"><em>We introduce them here; we will use them in detail in Week 9.</em></p>
+</section>
+
+<section class="slide level2">
+<h2>Distance–time graph</h2>
+<ul>
+<li>Plot <strong>distance</strong> (or displacement) on the vertical axis, <strong>time</strong> on the horizontal axis.</li>
+<li>A <strong>straight line</strong> means the body covers equal distances in equal times → <strong>uniform speed</strong>.</li>
+<li>The <strong>gradient (slope)</strong> of the line gives the <strong>speed</strong> of the body.</li>
+</ul>
+<svg viewBox="0 0 320 200" width="340" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <line x1="40" y1="20" x2="40" y2="170" stroke="#333" stroke-width="2"/>
+  <line x1="40" y1="170" x2="300" y2="170" stroke="#333" stroke-width="2"/>
+  <text x="25" y="30" text-anchor="end" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">distance</text>
+  <text x="300" y="188" text-anchor="end" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">time</text>
+  <line x1="40" y1="170" x2="270" y2="40" stroke="#0b4f8c" stroke-width="3"/>
+  <line x1="150" y1="170" x2="150" y2="108" stroke="#a3310f" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="40" y1="108" x2="150" y2="108" stroke="#a3310f" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="95" y="160" text-anchor="middle" font-family="Helvetica" font-weight="800" font-size="12" fill="#a3310f">Δt</text>
+  <text x="30" y="140" text-anchor="end" font-family="Helvetica" font-weight="800" font-size="12" fill="#a3310f">Δd</text>
+  <text x="200" y="100" font-family="Helvetica" font-weight="800" font-size="12" fill="#0b4f8c">slope = speed</text>
+</svg>
+</section>
+
+<section class="slide level2">
+<h2>Velocity–time graph</h2>
+<ul>
+<li>Plot <strong>velocity</strong> on the vertical axis, <strong>time</strong> on the horizontal axis.</li>
+<li>A <strong>horizontal line</strong> → constant (uniform) velocity.</li>
+<li>A line <strong>sloping upward</strong> → velocity increasing → <strong>acceleration</strong>.</li>
+<li>A line <strong>sloping downward</strong> → velocity decreasing → <strong>retardation</strong> (deceleration).</li>
+</ul>
+<svg viewBox="0 0 400 200" width="420" style="display:block;margin:0.3em auto;background:#fff;border:1px solid #ccd;border-radius:6px">
+  <line x1="40" y1="20" x2="40" y2="170" stroke="#333" stroke-width="2"/>
+  <line x1="40" y1="170" x2="380" y2="170" stroke="#333" stroke-width="2"/>
+  <text x="25" y="30" text-anchor="end" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">v</text>
+  <text x="380" y="188" text-anchor="end" font-family="Helvetica" font-weight="800" font-size="12" fill="#333">t</text>
+  <line x1="40" y1="170" x2="140" y2="60" stroke="#0b4f8c" stroke-width="3"/>
+  <line x1="140" y1="60" x2="250" y2="60" stroke="#0b4f8c" stroke-width="3"/>
+  <line x1="250" y1="60" x2="360" y2="170" stroke="#0b4f8c" stroke-width="3"/>
+  <text x="70" y="110" font-family="Helvetica" font-weight="800" font-size="11" fill="#0b4f8c">accelerating</text>
+  <text x="170" y="50" font-family="Helvetica" font-weight="800" font-size="11" fill="#0b4f8c">constant v</text>
+  <text x="275" y="110" font-family="Helvetica" font-weight="800" font-size="11" fill="#0b4f8c">retarding</text>
+</svg>
+</section>
+
+<section class="slide level2">
+<h2>Reading motion from graphs</h2>
+<ul>
+<li>On a <strong>distance–time graph</strong>: a steeper line means a <strong>faster</strong> body. A horizontal line means the body is <strong>at rest</strong>.</li>
+<li>On a <strong>velocity–time graph</strong>: a steeper upward slope means <strong>greater acceleration</strong>. The slope itself <em>is</em> the acceleration.</li>
+<li>The <strong>area under a velocity–time graph</strong> gives the total <strong>distance</strong> (or displacement) covered.</li>
+</ul>
+<blockquote class="fragment">
+<p>These three facts (gradient of d–t = speed; gradient of v–t = acceleration; area under v–t = distance) are the main tools for every motion calculation in Weeks 9–10.</p>
+</blockquote>
+</section>
+
+<section class="slide level2">
+<h2>Worked Example — Teacher's turn</h2>
+<blockquote>
+<p>A bus travels along a straight road at <strong>100 km h<sup>−1</sup></strong>. A conductor walks on the floor of the bus at <strong>6 km h<sup>−1</sup></strong> in the <strong>same direction</strong> as the bus. Find his speed (a) relative to the road, (b) relative to the bus. (c) If he now walks at the same rate <strong>opposite</strong> to the bus, find his new speed relative to the road.</p>
+<p><em>Based on NSP Bk 1 p. 28 Q 2.</em></p>
+</blockquote>
+<div class="fragment">
+<p><strong>Solution.</strong></p>
+<ul>
+<li>(a) Relative to road = 100 + 6 = <strong>106 km h<sup>−1</sup></strong>.</li>
+<li>(b) Relative to bus = <strong>6 km h<sup>−1</sup></strong> (same as the walking rate).</li>
+<li>(c) Opposite direction: relative to road = 100 − 6 = <strong>94 km h<sup>−1</sup></strong>.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide level2">
+<h2>Worked Example 2 — Teacher's turn</h2>
+<blockquote>
+<p>Two buses leave a bus station at the same instant and travel in <strong>opposite directions</strong> from the same starting point. The speed of one is <strong>twice</strong> the speed of the other, and they are <strong>240 km apart</strong> at the end of one hour. Find the speed of each bus.</p>
+<p><em>NSP Bk 1 p. 29 Q 24.</em></p>
+</blockquote>
+<div class="fragment">
+<p><strong>Solution.</strong> Let the slower bus's speed = \(x\) km h<sup>−1</sup>. The faster bus's speed = \(2x\) km h<sup>−1</sup>.</p>
+<p>In 1 hour, their separation = \(x + 2x = 3x\) km (because they move in opposite directions).</p>
+<p>So \(3x = 240\) ⇒ \(x = 80\) km h<sup>−1</sup>.</p>
+<p><strong>Slower bus: 80 km h<sup>−1</sup>. Faster bus: 160 km h<sup>−1</sup>.</strong></p>
+</div>
+</section>
+
+<section class="slide level2">
+<h2 class="task">Class task</h2>
+<p>Copy each question into your exercise book and answer there.</p>
+<ol>
+<li><strong>Define motion.</strong> List the four types of motion and give <strong>one example</strong> of each.<br/>
+<em>NSP Bk 1 p. 28 Q 1 &amp; Q 2 (adapted).</em></li>
+<li>Give <strong>two examples each</strong> of (a) rotational motion, (b) linear (translational) motion.<br/>
+<em>NSP Bk 1 p. 30 Q 25 (a).</em></li>
+</ol>
+<p class="fragment"><strong>Expected answers (for the teacher to reveal):</strong></p>
+<ul class="fragment">
+<li>1 — random, translational, rotational, oscillatory (any valid example each).</li>
+<li>2 — rotational: earth on its axis, fan blade; linear: car on a straight road, a dropped stone.</li>
+</ul>
+</section>
+
+<section class="slide level2">
+<h2 class="homework">Homework</h2>
+<p>Copy each question and answer in your exercise book. Submit next lesson.</p>
+<ol>
+<li>Define <strong>motion</strong> and <strong>relative motion</strong>. Give an example of relative motion. <em>(NSP Bk 1 p. 28 Q 2, part.)</em></li>
+<li>A bus is travelling along a straight road at <strong>100 km h<sup>−1</sup></strong> and a conductor walks on the floor of the bus at <strong>6 km h<sup>−1</sup></strong> in the same direction as the bus. Find the speed of the conductor relative to (a) the road, (b) the bus. If the conductor now walks at the same rate but in the opposite direction, find his new speed relative to the road. <em>(NSP Bk 1 p. 28 Q 2.)</em></li>
+<li>Two buses leave a bus station at the same instant and travel in opposite directions from the same starting point. The speed of one is twice the speed of the other and they are <strong>240 km</strong> apart at the end of one hour. What is the speed of each bus? <em>(NSP Bk 1 p. 29 Q 24.)</em></li>
+<li>Give <strong>two examples each</strong> of (a) rotational motion, (b) linear motion. <em>(NSP Bk 1 p. 30 Q 25 (a).)</em></li>
+<li>Explain why the trees outside a moving bus appear to move backwards to a passenger looking through the window. <em>(NSP Bk 1 pp. 14–15, worked passage.)</em></li>
+</ol>
+</section>
+
+<section class="slide level2">
+<h2>Key takeaways</h2>
+<ul>
+<li>Motion = change of position with time; described by <strong>kinematics</strong>, caused and explained by <strong>dynamics</strong>.</li>
+<li>Four types: <strong>random, translational, rotational, oscillatory</strong> — often combined in one body.</li>
+<li>Every statement of motion is <strong>relative</strong> to a chosen frame of reference.</li>
+<li>Same direction → <strong>add</strong> the speeds. Opposite direction → <strong>subtract</strong>. Opposite-direction separation → <strong>add</strong>.</li>
+</ul>
+</section>
+
+  </div></div>
+  <script src="./revealjs/dist/reveal.js"></script>
+  <script src="./revealjs/plugin/notes/notes.js"></script>
+  <script src="./revealjs/plugin/search/search.js"></script>
+  <script src="./revealjs/plugin/zoom/zoom.js"></script>
+  <script src="./revealjs/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true, progress: true, slideNumber: true, hash: true,
+      center: false, touch: true, fragments: true,
+      width: 1280, height: 900, margin: 4.0e-2, minScale: 0.2, maxScale: 2,
+      mathjax3: {
+        mathjax: './mathjax/es5/tex-mml-chtml.js',
+        tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] }
+      },
+      plugins: [ RevealMath.MathJax3, RevealNotes, RevealSearch, RevealZoom ]
+    });
+  </script>
+</body>
+</html>
